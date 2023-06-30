@@ -1,0 +1,23 @@
+$color1: #333333;
+$color2: #000000;
+$color3: #BDBDBD;
+$color4: #FBFBFB;
+$color5: #FFFFFF;
+$color6: #F2F2F2;
+$font: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+.container{
+max-width: 1170px;
+width: 100%;
+margin: 0 auto;
+}

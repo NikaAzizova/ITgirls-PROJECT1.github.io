@@ -1,1 +1,82 @@
-/*# sourceMappingURL=page3Style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__project-variants-wrapper {
+  max-width: 278px;
+  width: 100%;
+}
+.main__project-variants-wrapper .main__project-variants-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  position: relative;
+}
+.main__project-variants-wrapper .main__project-variants-title span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.main__project-variants-title::after {
+  content: " ";
+  width: 1170px;
+  height: 1px;
+  background-color: #F2F2F2;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+}
+
+.cards .cards__wrapper {
+  display: flex;
+  background-color: #FBFBFB;
+  margin-bottom: 60px;
+}
+.cards .cards__wrapper .card__info {
+  margin: 30px 30px 0px 30px;
+}
+.cards .cards__wrapper .card__info .card__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #BDBDBD;
+  margin-bottom: 73px;
+}
+.cards .cards__wrapper .card__info .card__text {
+  max-width: 400px;
+  min-height: 120px;
+  width: 100%;
+  margin-bottom: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000000;
+}
+.cards .cards__wrapper .card__info .card__button {
+  max-width: 222px;
+  min-height: 71px;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none;
+}
+.cards .cards__wrapper .card__info .card__button a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #333333;
+  text-decoration: none;
+}
+.cards .cards__wrapper .card__info .card__button .card__button-arrow {
+  margin-left: 15px;
+}/*# sourceMappingURL=page3Style.css.map */

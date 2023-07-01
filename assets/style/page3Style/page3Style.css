@@ -69,13 +69,10 @@ html {
   width: 100%;
   background-color: #FFFFFF;
   border: none;
-}
-.cards .cards__wrapper .card__info .card__button a {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   color: #333333;
-  text-decoration: none;
 }
 .cards .cards__wrapper .card__info .card__button .card__button-arrow {
   margin-left: 15px;

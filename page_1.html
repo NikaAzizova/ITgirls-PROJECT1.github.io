@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <title>Page1</title>
 </head>
 
@@ -96,21 +96,33 @@
 
 
                 </div>
-                <button class="projects__button">All Projects <a href="" class="arrow-right"><img
-                            src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"></a></button>
+                <button class="projects__button">All Projects <img
+                        src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"
+                        class="arrow-right"></button>
 
             </div>
             <div class="contacts">
-                <div class="contacts__form">
-                    <h2 class="contacts__title">Contact Us</h2>
+
+                <h2 class="contacts__title">Contact Us</h2>
+                <div class="contacts__content">
+                    <div class="contact__form">
+                        <input type="text" name="name" placeholder="   Name*" class="contact__input">
+                        <input type="tel" name="phone" placeholder="   Phone number*" class="contact__input">
+                        <input type="email" name="email" placeholder="   E-mail*" class="contact__input">
+                        <input type="text" name="text" placeholder="   Interested In" class="contact__input">
+                        <textarea name="Message" placeholder="   Message*"
+                            class="contact__textarea"></textarea>
+                    </div>
+                    <div class="contacts__img">
+                        <img src="./assets/image/page1_img/image/man.png" alt="man with phone">
+                    </div>
                 </div>
-                <div class="contacts__img">
-                    <img src="./assets/image/page1_img/image/man.png" alt="man with phone">
+                    <button class="contacts__button">Send Email <img
+                            src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"
+                            class="arrow-right"></button>
                 </div>
-            </div>
-            <div class="button">
-                <button></button>
-            </div>
+            
+
         </div>
     </main>
     <footer class="footer"></footer>

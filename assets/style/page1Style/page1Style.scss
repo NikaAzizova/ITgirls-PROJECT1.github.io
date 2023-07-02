@@ -1,6 +1,7 @@
 @import '../template';
 @import '../header/header';
 @import '../footer/footer';
+
 .main__container {
     display: flex;
     min-height: 240.5rem;
@@ -37,7 +38,7 @@
         flex: 1;
         justify-content: flex-start;
         align-items: end;
-        background-image: url(/ITgirls-PROJECT1/assets/image/page1_img/background/building.png);
+        background-image: url(/assets/image/page1_img/background/building.png);
 
         .box-main__buttom {
             width: 13.875rem;
@@ -224,8 +225,8 @@
 
             .projects__wrapper {
                 flex-basis: 50%;
-                
-                background-image: url(/ITgirls-PROJECT1/assets/image/page1_img/background/projects_background.png);
+
+                background-image: url(/assets/image/page1_img/background/projects_background.png);
 
                 .projects__link {
                     height: 100%;
@@ -271,19 +272,87 @@
     .projects__button {
         align-self: flex-end;
         width: 13.875rem;
-            height: 4.4375rem;
-            flex-shrink: 0;
-            border: none;
-            background: $color1;
-            color: $color5;
-            font-size: 0.75rem;
-            font-family: $font;
-            font-style: normal;
-            line-height: 0.75rem;
-            letter-spacing: 0.15rem;
-            text-transform: uppercase;
-            /*сделать переменной*/
+        height: 4.4375rem;
+        flex-shrink: 0;
+        border: none;
+        background: $color1;
+        color: $color5;
+        font-size: 0.75rem;
+        font-family: $font;
+        font-style: normal;
+        line-height: 0.75rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        /*сделать переменной*/
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    height: 37.6875rem;
+
+    .contacts__title {
+        display: flex;
+        font-size: 4rem;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 4rem;
+        color: $color3;
+        /*сделать переменной*/
     }
 
+    .contacts__content {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 1.88rem;
+
+        .contact__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 23.0625rem;
+
+            .contact__input, .contact__textarea {
+                width: 24.4375rem;
+                height: 2.875rem;
+                background-color: #F3F3F3;
+                border: none;
+                color: $color3;
+                font-size: 0.875rem;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.035rem;
+            }
+
+            .contact__textarea {
+                height: 9.1875rem;
+                
+            }
+        }
+
+    }
+
+    .contacts__button {
+
+
+        width: 13.875rem;
+        height: 4.4375rem;
+        flex-shrink: 0;
+        border: none;
+        background: $color1;
+        color: $color5;
+        font-size: 0.75rem;
+        font-family: $font;
+        font-style: normal;
+        line-height: 0.75rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        /*сделать переменной*/
+    }
 
 }

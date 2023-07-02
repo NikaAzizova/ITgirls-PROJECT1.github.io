@@ -66,6 +66,8 @@ ul {
 .header__nav li {
   margin-left: 2rem;
   margin-right: 2rem;
+  padding-top: 0.24rem;
+  padding-bottom: 0.24rem;
   color: #333333;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
@@ -74,6 +76,8 @@ ul {
   line-height: 0.75rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .header__nav li:first-child {

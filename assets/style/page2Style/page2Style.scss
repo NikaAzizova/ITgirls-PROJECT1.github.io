@@ -1,3 +1,39 @@
-@import '../template';
-@import '../header/header';
-@import '../footer/footer';
+@import "../template";
+@import "../header/header";
+@import "../footer/footer";
+
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery__title_color {
+  color: $color3;
+  font-family: $font;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+
+  padding-top: 3.94rem;
+}
+
+.gallery__title {
+  color: $color1;
+  font-family: $font;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+
+  padding-bottom: 1.87rem;
+  border-bottom: 1px solid $color6;
+}
+
+.gallery__items {
+  display: grid;
+  grid-template-columns: repeat(5, 13.125rem);
+  grid-template-rows: repeat(2, 16.25rem);
+  gap: 1.88rem;
+
+  padding: 1.88rem 0 3.75rem 0;
+}

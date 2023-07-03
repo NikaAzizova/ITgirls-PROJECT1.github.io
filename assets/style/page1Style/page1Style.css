@@ -209,7 +209,7 @@ footer {
   flex: 1;
   justify-content: flex-start;
   align-items: end;
-  background: url("/assets/image/page1_img/background/building.png");
+  background: url(../../image/page1_img/background/building.png);
 }
 .box-main .box-main__img .box-main__buttom {
   width: 13.875rem;
@@ -342,7 +342,7 @@ footer {
 }
 .projects .projects__content .projects__first-line .projects__wrapper {
   flex-basis: 50%;
-  background: url("/assets/image/page1_img/background/projects_background.png");
+  background: url(../../image/page1_img/background/projects_background.png);
 }
 .projects .projects__content .projects__first-line .projects__wrapper .projects__link {
   height: 100%;

@@ -42,6 +42,24 @@ li {
   line-height: normal;
 }
 
+.title-h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+}
+.title-h1 span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.title-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
 ul {
   list-style: none;
 }

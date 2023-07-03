@@ -10,6 +10,19 @@ $color9: rgba(200, 200, 200, 0.50);
 $font: 'Roboto', sans-serif;
 $font2: 'Open Sans', sans-serif;
 
+@mixin btn ($bg, $color){
+    width: 13.875rem;
+    height: 4.4375rem;
+    border: none;
+    font-size: 0.75rem;
+    font-family: $font;
+    line-height: 0.75rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    background: $bg;
+    color: $color;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -53,3 +66,21 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+
+.title-h1 {
+    font-family: $font;
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;   
+    span {
+        font-weight: 300;
+        color: $color3;
+    }
+    }
+
+.title-h2 {
+    font-family: $font;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $color3;
+    }

@@ -188,7 +188,7 @@ footer {
 }
 
 .main__project-variants-wrapper {
-  max-width: 278px;
+  max-width: 17.36019rem;
   width: 100%;
 }
 .main__project-variants-wrapper .main__project-variants-title {
@@ -237,18 +237,19 @@ footer {
   color: #000000;
 }
 .cards .cards__wrapper .card__info .card__button {
-  max-width: 222px;
-  min-height: 71px;
-  width: 100%;
-  background-color: #FFFFFF;
+  width: 13.875rem;
+  height: 4.4375rem;
   border: none;
+  font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: #FFFFFF;
   color: #333333;
 }
 .cards .cards__wrapper .card__info .card__button .card__button-arrow {
-  margin-left: 15px;
+  margin-left: 1.25rem;
 }
 .cards .cards__wrapper:last-child {
   margin-bottom: 14.56rem;

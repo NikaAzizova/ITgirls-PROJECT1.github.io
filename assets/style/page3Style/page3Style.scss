@@ -3,7 +3,7 @@
 @import '../footer/footer';
 
 .main__project-variants-wrapper {
-    max-width: 278px;
+    max-width: 17.36019rem;
     width: 100%;
 
     .main__project-variants-title {
@@ -60,20 +60,10 @@
             }
 
             .card__button {
-                max-width: 222px;
-                min-height: 71px;
-                width: 100%;
-
-                background-color: $color5;
-                border: none;
-                font-family: $font;
-                font-weight: 400;
-                font-size: 0.8rem;
-                color: $color1;
-
+                @include btn($color5, $color1);
 
                 .card__button-arrow {
-                    margin-left: 15px;
+                    margin-left: 1.25rem;
                 }
             }
         }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -199,21 +198,18 @@ footer {
   display: flex;
   flex-basis: 51.8125rem;
 }
-.box-main .box-main__content {
+.box-main .box-main__title {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
   justify-content: space-around;
-}
-.box-main .box-main__content .title-h1 {
-  margin-top: 50%;
 }
 .box-main .box-main__img {
   display: flex;
   flex: 1;
   justify-content: flex-start;
   align-items: end;
-  background: url(/assets/image/page1_img/background/building.png);
+  background: url("/assets/image/page1_img/background/building.png");
 }
 .box-main .box-main__img .box-main__buttom {
   width: 13.875rem;
@@ -270,9 +266,6 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
 }
-.about .about__content .about__title {
-  /*сделать переменной*/
-}
 .about .about__content .about__text {
   width: 25rem;
   height: 12.5rem;
@@ -301,16 +294,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 16.75rem;
-}
-.mission .mission__title {
-  flex-basis: 15%;
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
 }
 .mission .mission__content {
   display: flex;
@@ -348,15 +331,6 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 }
-.projects .projects__title {
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
-}
 .projects .projects__content {
   display: flex;
   flex-direction: column;
@@ -368,7 +342,7 @@ footer {
 }
 .projects .projects__content .projects__first-line .projects__wrapper {
   flex-basis: 50%;
-  background: url(/assets/image/page1_img/background/projects_background.png);
+  background: url("/assets/image/page1_img/background/projects_background.png");
 }
 .projects .projects__content .projects__first-line .projects__wrapper .projects__link {
   height: 100%;
@@ -420,16 +394,6 @@ footer {
   flex-direction: column;
   height: 37.6875rem;
 }
-.contacts .contacts__title {
-  display: flex;
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
-}
 .contacts .contacts__content {
   display: flex;
   flex: 1;
@@ -442,7 +406,8 @@ footer {
   justify-content: space-between;
   height: 23.0625rem;
 }
-.contacts .contacts__content .contact__form .contact__input, .contacts .contacts__content .contact__form .contact__textarea {
+.contacts .contacts__content .contact__form .contact__input,
+.contacts .contacts__content .contact__form .contact__textarea {
   width: 24.4375rem;
   height: 2.875rem;
   background-color: #F3F3F3;

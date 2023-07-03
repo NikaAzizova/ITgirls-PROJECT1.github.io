@@ -13,24 +13,20 @@
 .box-main {
     display: flex;
     flex-basis: 51.8125rem;
-
-    .box-main__content {
+    .box-main__title {
         display: flex;
         flex-direction: column;
         flex-basis: 25rem;
         justify-content: space-around;
 
-        .title-h1 {
-            margin-top: 50%;
-        }
-    }
 
+    }
     .box-main__img {
         display: flex;
         flex: 1;
         justify-content: flex-start;
         align-items: end;
-        background: url(/assets/image/page1_img/background/building.png);
+        background: url('/assets/image/page1_img/background/building.png');
 
         .box-main__buttom {
             @include btn ($color5, $color1)
@@ -68,16 +64,13 @@
                 margin-top: 1.88rem;
                 margin-bottom: -1.88rem;
             }
-
         }
 
         .about__second-column {
-
             width: 16.875rem;
             height: 21.5625rem;
             flex-shrink: 0;
             margin-top: 3.75rem;
-
         }
     }
 
@@ -87,11 +80,6 @@
         width: 31.25rem;
         justify-content: space-around;
         align-items: flex-start;
-
-        .about__title {
-            
-            /*сделать переменной*/
-        }
 
         .about__text {
             width: 25rem;
@@ -115,17 +103,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 16.75rem;
-
-    .mission__title {
-        flex-basis: 15%;
-        font-size: 4rem;
-        font-family: $font;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 4rem;
-        color: $color3;
-        /*сделать переменной*/
-    }
 
     .mission__content {
         display: flex;
@@ -167,92 +144,66 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .projects__title {
-        font-size: 4rem;
-        font-family: $font;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 4rem;
-        color: $color3;
-        /*сделать переменной*/
-    }
+.projects__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
 
-    .projects__content {
+    .projects__first-line {
         display: flex;
-        flex-direction: column;
         gap: 1.88rem;
 
-        .projects__first-line {
-            display: flex;
-            gap: 1.88rem;
+        .projects__wrapper {
+            flex-basis: 50%;
+            background: url('/assets/image/page1_img/background/projects_background.png');
 
-            .projects__wrapper {
-                flex-basis: 50%;
+            .projects__link {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.9rem;
+                background-color: rgba(51, 51, 51, 0.74);
 
-                background: url(/assets/image/page1_img/background/projects_background.png);
+                .link-title {
+                    width: 14.56rem;
+                    color: $color5;
+                    font-size: 4rem;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 4rem;
+                    margin-left: 4.94rem;
+                }
 
-                .projects__link {
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 0.9rem;
-                    background-color: rgba(51, 51, 51, 0.74);
-
-                    .link-title {
-                        width: 14.56rem;
-                        color: $color5;
-                        font-size: 4rem;
-                        font-family: $font;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 4rem;
-                        margin-left: 4.94rem;
-                    }
-
-                    .link-button {
-                        font-size: 0.75rem;
-                        font-family: 'Gothic A1', sans-serif;
-                        font-style: normal;
-                        letter-spacing: 0.15rem;
-                        text-transform: uppercase;
-                        color: $color5;
-                        margin-left: 4.94rem;
-                    }
-
+                .link-button {
+                    font-size: 0.75rem;
+                    font-family: 'Gothic A1', sans-serif;
+                    font-style: normal;
+                    letter-spacing: 0.15rem;
+                    text-transform: uppercase;
+                    color: $color5;
+                    margin-left: 4.94rem;
                 }
             }
-
-        }
-
-
-        .projects__second-line {
-            display: flex;
-            justify-content: space-between;
         }
     }
 
+    .projects__second-line {
+        display: flex;
+        justify-content: space-between;
+    }
+}
     .projects__button {
         align-self: flex-end;
         @include btn ($color1, $color5)
     }
-}
 
+}
 .contacts {
     display: flex;
     flex-direction: column;
     height: 37.6875rem;
-
-    .contacts__title {
-        display: flex;
-        font-size: 4rem;
-        font-family: $font;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 4rem;
-        color: $color3;
-        /*сделать переменной*/
-    }
 
     .contacts__content {
         display: flex;
@@ -266,7 +217,8 @@
             justify-content: space-between;
             height: 23.0625rem;
 
-            .contact__input, .contact__textarea {
+            .contact__input,
+            .contact__textarea {
                 width: 24.4375rem;
                 height: 2.875rem;
                 background-color: #F3F3F3;
@@ -282,14 +234,11 @@
 
             .contact__textarea {
                 height: 9.1875rem;
-                
             }
         }
-
     }
 
     .contacts__button {
-@include btn ($color1, $color5)
+        @include btn ($color1, $color5)
     }
-
 }

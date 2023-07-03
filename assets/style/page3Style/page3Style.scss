@@ -10,6 +10,7 @@
         font-family: $font;
         font-size: 4rem;
         position: relative;
+
         span {
             font-weight: 300;
             color: $color3;
@@ -17,15 +18,16 @@
 
     }
 }
-.main__project-variants-title::after {
-content: " ";
-width: 1170px;
-height: 1px;
 
-background-color: $color6;
-position: absolute;
-bottom: -17px;
-left: 0;
+.main__project-variants-title::after {
+    content: " ";
+    width: 1170px;
+    height: 1px;
+
+    background-color: $color6;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
 
 }
 
@@ -34,6 +36,7 @@ left: 0;
         display: flex;
         background-color: $color4;
         margin-bottom: 60px;
+
         .card__info {
             margin: 30px 30px 0px 30px;
 
@@ -67,12 +70,43 @@ left: 0;
                 font-weight: 400;
                 font-size: 0.8rem;
                 color: $color1;
-                
-                
-                .card__button-arrow{
+
+
+                .card__button-arrow {
                     margin-left: 15px;
                 }
             }
+        }
+    }
+
+    .cards__wrapper:last-child {
+        margin-bottom: 75px;
+    }
+}
+
+.main__icons-wrapper {
+    display: flex;
+    margin-bottom: 134px;
+
+    .main__icons-picture {
+        margin-right: 31px;
+    }
+    .main__icons-arrow {
+        .main__icons-img {
+            max-width: 53px;
+            width: 100%;
+            min-height: 53px;
+            padding: 15px;
+            border: 1px solid $color6;
+
+        }
+        .main__icons-img-left {
+            background-color: $color5;
+            margin-right: 23px;
+
+        }
+        .main__icons-img-right {
+            background-color: $color10;
         }
     }
 }

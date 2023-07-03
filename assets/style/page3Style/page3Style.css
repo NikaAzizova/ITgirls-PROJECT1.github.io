@@ -249,4 +249,29 @@ footer {
 }
 .cards .cards__wrapper .card__info .card__button .card__button-arrow {
   margin-left: 15px;
+}
+.cards .cards__wrapper:last-child {
+  margin-bottom: 75px;
+}
+
+.main__icons-wrapper {
+  display: flex;
+  margin-bottom: 134px;
+}
+.main__icons-wrapper .main__icons-picture {
+  margin-right: 31px;
+}
+.main__icons-wrapper .main__icons-arrow .main__icons-img {
+  max-width: 53px;
+  width: 100%;
+  min-height: 53px;
+  padding: 15px;
+  border: 1px solid #F2F2F2;
+}
+.main__icons-wrapper .main__icons-arrow .main__icons-img-left {
+  background-color: #FFFFFF;
+  margin-right: 23px;
+}
+.main__icons-wrapper .main__icons-arrow .main__icons-img-right {
+  background-color: #F9F9F9;
 }/*# sourceMappingURL=page3Style.css.map */

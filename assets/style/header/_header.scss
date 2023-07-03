@@ -1,8 +1,8 @@
-ul {
-    list-style: none;
-}
+    ul {
+        list-style: none;
+    }
 
-.header {
+    .header {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -21,8 +21,8 @@ ul {
 }
 
 .header__nav li {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
     padding-top: 0.24rem;
     padding-bottom: 0.24rem;
 
@@ -55,4 +55,62 @@ ul {
     border-bottom: 1px solid $color1;
 
     transition: all 0.5s ease;
+}
+
+.header__nav span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.header__nav span:hover {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 690px) and (max-width: 1360px) {
+    .header {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .header__nav {
+        max-width: 30rem;
+        width: 30rem;
+    
+        justify-content: flex-end;
+        margin-left: 6.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header__nav li {
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 689px) {
+    .header {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    .header__nav {
+        max-width: 30rem;
+        width: 30rem;
+    
+        justify-content: flex-end;
+        margin-left: 6.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header__nav li {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+
+        line-height: 0.625rem;
+    }
 }

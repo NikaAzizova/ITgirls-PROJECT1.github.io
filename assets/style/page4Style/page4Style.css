@@ -60,10 +60,6 @@ li {
   color: #BDBDBD;
 }
 
-ul {
-  list-style: none;
-}
-
 .header {
   display: flex;
   justify-content: start;
@@ -71,19 +67,35 @@ ul {
   margin-top: 1.82rem;
 }
 
-.header__nav {
-  width: 40rem;
+.header__logo {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__nav {
+  display: inline;
+}
+
+.header__nav ul {
+  list-style: none;
+}
+
+.header__menu {
+  display: inline;
   margin-left: 20.7rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.header__nav li {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.header__menu li {
+  display: inline;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
   padding-top: 0.24rem;
   padding-bottom: 0.24rem;
   color: #333333;
@@ -98,15 +110,15 @@ ul {
   border-bottom: 1px solid transparent;
 }
 
-.header__nav li:first-child {
+.header__menu li:first-child {
   margin-left: 0;
 }
 
-.header__nav li:last-child {
+.header__menu li:last-child {
   margin-right: 0;
 }
 
-.header__nav li:hover {
+.header__menu li:hover {
   padding-top: 0.24rem;
   padding-bottom: 0.24rem;
   border-top: 1px solid #333333;
@@ -114,6 +126,59 @@ ul {
   transition: all 0.5s ease;
 }
 
+.header__menu span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.header__menu span:hover {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.menu__items {
+  display: inline;
+}
+
+@media (min-width: 690px) and (max-width: 1360px) {
+  .header {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .header__menu {
+    max-width: 30rem;
+    width: 30rem;
+    justify-content: flex-end;
+    margin-left: 6.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .header__menu li {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 689px) {
+  .header {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .header__menu {
+    max-width: 30rem;
+    width: 30rem;
+    justify-content: flex-end;
+    margin-left: 6.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .header__menu li {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    line-height: 0.625rem;
+  }
+}
 footer {
   background-color: #2C2C2C;
 }
@@ -127,7 +192,6 @@ footer {
 
 .footer__row {
   display: flex;
-  justify-content: start;
   padding-bottom: 3.75rem;
 }
 
@@ -155,6 +219,7 @@ footer {
 }
 
 .footer__row-col:first-child {
+  order: 1;
   margin-top: 1.56rem;
 }
 
@@ -167,9 +232,13 @@ footer {
   align-items: center;
 }
 
-.footer__row-logo-img {
+.footer__row-logo {
+  display: flex;
+}
+
+.footer__row-logo img {
+  width: 100%;
   margin-left: -1.25rem;
-  margin-right: 6.25rem;
 }
 
 .footer__copywrite {
@@ -187,6 +256,57 @@ footer {
   line-height: 1.375rem;
 }
 
+<<<<<<< HEAD
+@media (min-width: 690px) and (max-width: 1360px) {
+  .footer__row {
+    justify-content: space-around;
+    padding-bottom: 1rem;
+  }
+  .footer__row-logo {
+    margin-bottom: 3rem;
+  }
+  .footer__row-col:nth-child(2) {
+    margin-right: 0;
+  }
+  .footer__row-col:nth-child(3) {
+    margin-right: 0;
+  }
+  .footer__row-col:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 689px) {
+  .footer__row {
+    max-width: 30rem;
+    width: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    row-gap: 2rem;
+  }
+  .footer__row-col {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+  .footer__row-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__row-logo img {
+    margin-left: 0;
+  }
+  .col__contacts {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+=======
 main {
   display: flex;
   flex-direction: column;
@@ -204,4 +324,5 @@ main div {
 
 span {
   text-transform: uppercase;
+>>>>>>> 9f5e8ad2b1e7bb08d47ae2cd06b382bb8efbc0a8
 }/*# sourceMappingURL=page4Style.css.map */

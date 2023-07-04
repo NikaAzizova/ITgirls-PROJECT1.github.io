@@ -42,6 +42,24 @@ li {
   line-height: normal;
 }
 
+.title-h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+}
+.title-h1 span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.title-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
 .header {
   display: flex;
   justify-content: start;
@@ -51,6 +69,8 @@ li {
 
 .header__logo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo img {
@@ -287,7 +307,7 @@ footer {
   }
 }
 .main__project-variants-wrapper {
-  max-width: 278px;
+  max-width: 17.36019rem;
   width: 100%;
 }
 .main__project-variants-wrapper .main__project-variants-title {
@@ -313,39 +333,43 @@ footer {
 .cards .cards__wrapper {
   display: flex;
   background-color: #FBFBFB;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .cards .cards__wrapper .card__info {
-  margin: 30px 30px 0px 30px;
+  margin: 1.88rem 1.88rem 1.88rem 1.88rem;
 }
 .cards .cards__wrapper .card__info .card__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   color: #BDBDBD;
-  margin-bottom: 73px;
+  margin-bottom: 4.56rem;
 }
 .cards .cards__wrapper .card__info .card__text {
-  max-width: 400px;
-  min-height: 120px;
+  max-width: 25rem;
+  min-height: 7.5rem;
   width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #000000;
 }
 .cards .cards__wrapper .card__info .card__button {
-  max-width: 222px;
-  min-height: 71px;
-  width: 100%;
-  background-color: #FFFFFF;
+  width: 13.875rem;
+  height: 4.4375rem;
   border: none;
+  font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: #FFFFFF;
   color: #333333;
 }
 .cards .cards__wrapper .card__info .card__button .card__button-arrow {
-  margin-left: 15px;
+  margin-left: 1.25rem;
+}
+.cards .cards__wrapper:last-child {
+  margin-bottom: 14.56rem;
 }/*# sourceMappingURL=page3Style.css.map */

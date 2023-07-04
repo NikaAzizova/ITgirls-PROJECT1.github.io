@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +42,24 @@ li {
   line-height: normal;
 }
 
+.title-h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+}
+.title-h1 span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.title-h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
 .header {
   display: flex;
   justify-content: start;
@@ -52,6 +69,8 @@ li {
 
 .header__logo {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__logo img {
@@ -298,45 +317,30 @@ footer {
   display: flex;
   flex-basis: 51.8125rem;
 }
-.box-main .box-main__content {
+.box-main .box-main__title {
   display: flex;
   flex-direction: column;
   flex-basis: 25rem;
   justify-content: space-around;
-}
-.box-main .box-main__content .box-main__title {
-  margin-top: 50%;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  position: relative;
-}
-.box-main .box-main__content .box-main__title span {
-  font-weight: 300;
-  color: #BDBDBD;
 }
 .box-main .box-main__img {
   display: flex;
   flex: 1;
   justify-content: flex-start;
   align-items: end;
-  background-image: url(/ITgirls-PROJECT1/assets/image/page1_img/background/building.png);
-  /*задать переменную*/
+  background: url(../../image/page1_img/background/building.png);
 }
 .box-main .box-main__img .box-main__buttom {
   width: 13.875rem;
   height: 4.4375rem;
-  flex-shrink: 0;
   border: none;
-  background: #FFFFFF;
-  color: #333333;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 1000;
   line-height: 0.75rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+  background: #FFFFFF;
+  color: #333333;
 }
 
 .about {
@@ -381,15 +385,6 @@ footer {
   justify-content: space-around;
   align-items: flex-start;
 }
-.about .about__content .about__title {
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
-}
 .about .about__content .about__text {
   width: 25rem;
   height: 12.5rem;
@@ -403,46 +398,35 @@ footer {
 .about .about__content .about__button {
   width: 13.875rem;
   height: 4.4375rem;
-  flex-shrink: 0;
   border: none;
-  background: #FFFFFF;
-  color: #333333;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 1000;
   line-height: 0.75rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  /*сделать переменной*/
+  background: #FFFFFF;
+  color: #333333;
 }
 
 .mission {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 16.75rem;
-}
-.mission .mission__title {
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
+  height: 16.75rem;
 }
 .mission .mission__content {
   display: flex;
   justify-content: space-between;
+  flex: 1;
 }
 .mission .mission__content .mission__statement {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  height: 9rem;
+  flex-basis: 100%;
 }
 .mission .mission__content .mission__statement .mission__number {
+  align-self: flex-end;
   color: #F2F2F2;
   font-size: 12.5rem;
   font-family: "Roboto", sans-serif;
@@ -466,15 +450,6 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 }
-.projects .projects__title {
-  font-size: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 4rem;
-  color: #BDBDBD;
-  /*сделать переменной*/
-}
 .projects .projects__content {
   display: flex;
   flex-direction: column;
@@ -486,7 +461,7 @@ footer {
 }
 .projects .projects__content .projects__first-line .projects__wrapper {
   flex-basis: 50%;
-  background-image: url(/ITgirls-PROJECT1/assets/image/page1_img/background/projects_background.png);
+  background: url(../../image/page1_img/background/projects_background.png);
 }
 .projects .projects__content .projects__first-line .projects__wrapper .projects__link {
   height: 100%;
@@ -523,15 +498,59 @@ footer {
   align-self: flex-end;
   width: 13.875rem;
   height: 4.4375rem;
-  flex-shrink: 0;
   border: none;
-  background: #333333;
-  color: #FFFFFF;
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   line-height: 0.75rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  /*сделать переменной*/
+  background: #333333;
+  color: #FFFFFF;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  height: 37.6875rem;
+}
+.contacts .contacts__content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 1.88rem;
+}
+.contacts .contacts__content .contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 23.0625rem;
+}
+.contacts .contacts__content .contact__form .contact__input,
+.contacts .contacts__content .contact__form .contact__textarea {
+  width: 24.4375rem;
+  height: 2.875rem;
+  background-color: #F3F3F3;
+  border: none;
+  color: #BDBDBD;
+  font-size: 0.875rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.035rem;
+}
+.contacts .contacts__content .contact__form .contact__textarea {
+  height: 9.1875rem;
+}
+.contacts .contacts__button {
+  width: 13.875rem;
+  height: 4.4375rem;
+  border: none;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: #333333;
+  color: #FFFFFF;
 }/*# sourceMappingURL=page1Style.css.map */

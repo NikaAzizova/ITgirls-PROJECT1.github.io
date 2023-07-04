@@ -28,7 +28,10 @@
     position: absolute;
     bottom: -17px;
     left: 0;
-
+    @media screen and (max-width: 1197px){
+        content: none;
+        text-align: center;
+    }
 }
 
 .cards {
@@ -39,15 +42,16 @@
         @media screen and (max-width: 1197px){
            flex-direction: column; 
            max-width: 670px;
-           width: 100%;
-          
-           
+           width: 100%; 
         }
         }
 
         .card__info {
             margin: 1.88rem 1.88rem 1.88rem 1.88rem;
-
+            @media screen and (max-width: 768px){
+                
+            text-align: center;
+            }
             .card__title {
                 font-family: $font;
                 font-weight: 300;
@@ -65,6 +69,11 @@
                 font-weight: 300;
                 font-size: 1rem;
                 color: $color2;
+                @media screen and (max-width: 768px){
+                    max-width: 670px;
+                    width: 100%;
+                    
+                }
             }
 
             .card__button {

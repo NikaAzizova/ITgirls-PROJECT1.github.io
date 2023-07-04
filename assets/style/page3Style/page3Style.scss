@@ -37,16 +37,12 @@
         background-color: $color4;
         margin-bottom: 3.75rem;
         @media screen and (max-width: 1197px){
-           flex-direction: column;
-            
+           flex-direction: column; 
+           max-width: 670px;
+           width: 100%;
+          
+           
         }
-        .card__img{
-            @media screen and (max-width: 1197px){
-               max-width: 670px;
-               width: 100%;
-
-                 
-             }
         }
 
         .card__info {
@@ -84,4 +80,4 @@
     .cards__wrapper:last-child {
         margin-bottom: 14.56rem;
     }
-}
+

@@ -341,6 +341,12 @@ footer {
   bottom: -17px;
   left: 0;
 }
+@media screen and (max-width: 1197px) {
+  .main__project-variants-title::after {
+    content: none;
+    text-align: center;
+  }
+}
 
 .cards .cards__wrapper {
   display: flex;
@@ -356,6 +362,11 @@ footer {
 }
 .cards .card__info {
   margin: 1.88rem 1.88rem 1.88rem 1.88rem;
+}
+@media screen and (max-width: 768px) {
+  .cards .card__info {
+    text-align: center;
+  }
 }
 .cards .card__info .card__title {
   font-family: "Roboto", sans-serif;
@@ -373,6 +384,12 @@ footer {
   font-weight: 300;
   font-size: 1rem;
   color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .cards .card__info .card__text {
+    max-width: 670px;
+    width: 100%;
+  }
 }
 .cards .card__info .card__button {
   width: 13.875rem;

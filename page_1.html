@@ -11,10 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
     <title>Page1</title>
 </head>
 
@@ -24,26 +20,28 @@
         <div class="container">
             <div class="header">
                 <div class="header__logo">
-                    <a href="#"><img class="logo__img" src="./assets/image/template/header_img/logo-header.svg"
+                    <a href="/"><img class="logo__img" src="./assets/image/template/header_img/logo-header.svg"
                             alt="Логотип"></a>
                 </div>
-                <ul class="header__nav">
-                    <li>
-                        <a href="./page_1.html">Main</a>
-                    </li>
-                    <li>
-                        <a href="./page_2.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="./page_3.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./page_4.html">Certifications</a>
-                    </li>
-                    <li>
-                        <a href="./page_5.html">Contacts</a>
-                    </li>
-                </ul>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="menu__items">
+                            <a href="./page_1.html" class="menu__link"><span>Main</span></a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="./page_2.html" class="menu__link"><span>Gallery</span></a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="./page_3.html" class="menu__link"><span>Projects</span></a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="./page_5.html" class="menu__link"><span>Certifications</span></a>
+                        </li>
+                        <li class="menu__items">
+                            <a href="./page_6.html" class="menu__link"><span>Contacts</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -126,33 +124,21 @@
 
 
                 </div>
-                <button class="projects__button">All Projects <img
-                        src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"
-                        class="arrow-right"></button>
+                <button class="projects__button">All Projects <a href="" class="arrow-right"><img
+                            src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"></a></button>
 
             </div>
             <div class="contacts">
-
-                <h2 class="contacts__title">Contact Us</h2>
-                <div class="contacts__content">
-                    <div class="contact__form">
-                        <input type="text" name="name" placeholder="   Name*" class="contact__input">
-                        <input type="tel" name="phone" placeholder="   Phone number*" class="contact__input">
-                        <input type="email" name="email" placeholder="   E-mail*" class="contact__input">
-                        <input type="text" name="text" placeholder="   Interested In" class="contact__input">
-                        <textarea name="Message" placeholder="   Message*"
-                            class="contact__textarea"></textarea>
-                    </div>
-                    <div class="contacts__img">
-                        <img src="./assets/image/page1_img/image/man.png" alt="man with phone">
-                    </div>
+                <div class="contacts__form">
+                    <h2 class="contacts__title">Contact Us</h2>
                 </div>
-                    <button class="contacts__button">Send Email <img
-                            src="./assets/image/page1_img/icons/arrow-right-white.png" alt="arrow-right"
-                            class="arrow-right"></button>
+                <div class="contacts__img">
+                    <img src="./assets/image/page1_img/image/man.png" alt="man with phone">
                 </div>
-            
-
+            </div>
+            <div class="button">
+                <button></button>
+            </div>
         </div>
     </main>
     <footer>
@@ -167,8 +153,8 @@
                         <a href="./page_1.html" target="_blank">Main</a>
                         <a href="./page_2.html" target="_blank">Gallery</a>
                         <a href="./page_3.html" target="_blank">Projects</a>
-                        <a href="./page_4.html" target="_blank">Certifications</a>
-                        <a href="./page_5.html" target="_blank">Contacts</a>
+                        <a href="./page_5.html" target="_blank">Certifications</a>
+                        <a href="./page_6.html" target="_blank">Contacts</a>
                     </div>
                     <div class="footer__row-col">Contacts
                         <div class="col__contacts"><img src="./assets/image/template/footer_img/icons/icon-pin.svg"
@@ -204,14 +190,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="footer__copywrite">
             © 2021 All Rights Reserved
         </div>
     </footer>
-    </div>
 </body>
 
 </html>

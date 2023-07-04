@@ -7,11 +7,23 @@
 html {
   font-size: 100%;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 a,
@@ -335,17 +347,24 @@ footer {
   background-color: #FBFBFB;
   margin-bottom: 3.75rem;
 }
-.cards .cards__wrapper .card__info {
+@media screen and (max-width: 1197px) {
+  .cards .cards__wrapper {
+    flex-direction: column;
+    max-width: 670px;
+    width: 100%;
+  }
+}
+.cards .card__info {
   margin: 1.88rem 1.88rem 1.88rem 1.88rem;
 }
-.cards .cards__wrapper .card__info .card__title {
+.cards .card__info .card__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   color: #BDBDBD;
   margin-bottom: 4.56rem;
 }
-.cards .cards__wrapper .card__info .card__text {
+.cards .card__info .card__text {
   max-width: 25rem;
   min-height: 7.5rem;
   width: 100%;
@@ -355,7 +374,7 @@ footer {
   font-size: 1rem;
   color: #000000;
 }
-.cards .cards__wrapper .card__info .card__button {
+.cards .card__info .card__button {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -367,9 +386,10 @@ footer {
   background: #FFFFFF;
   color: #333333;
 }
-.cards .cards__wrapper .card__info .card__button .card__button-arrow {
+.cards .card__info .card__button .card__button-arrow {
   margin-left: 1.25rem;
 }
-.cards .cards__wrapper:last-child {
+
+.cards__wrapper:last-child {
   margin-bottom: 14.56rem;
 }/*# sourceMappingURL=page3Style.css.map */

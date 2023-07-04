@@ -349,4 +349,16 @@ footer {
   grid-template-rows: repeat(2, 16.25rem);
   gap: 1.88rem;
   padding: 1.88rem 0 3.75rem 0;
+}
+@media screen and (max-width: 1197px) {
+  .gallery__items {
+    grid-template-columns: repeat(auto-fit, minmax(13.125rem, 1fr));
+    justify-items: center;
+    padding: 1.88rem 0 3.75rem 0;
+  }
+}
+
+.gallery__img {
+  width: 13.125rem;
+  height: 16.25rem;
 }/*# sourceMappingURL=page2Style.css.map */

@@ -140,16 +140,6 @@
         margin: 1rem 1rem 1rem 1rem;
     }
 
-    .header__menu {
-        max-width: 30rem;
-        width: 30rem;
-    
-        justify-content: flex-end;
-        margin-left: 6.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
     .header__menu li {
         margin-left: 0.2rem;
         margin-right: 0.2rem;
@@ -168,41 +158,4 @@
     overflow: hidden;
     transition: max-height .5s ease-out;
     }
-
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 2.5rem 1.25rem;
-    margin-left: 5rem;
-}
-
-.hamb__line {
-    background: $color8;
-    display: block;
-    height: 0.125rem;
-    position: relative;
-    width: 1.5rem;
-
-}
-
-.hamb__line::before,
-.hamb__line::after {
-    background: $color8;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.hamb__line::before{
-    top: 0.313rem;
-}
-.hamb__line::after{
-    top: -0.313rem;
-}
-
-.side__menu {
-    display: none;
-}
 }

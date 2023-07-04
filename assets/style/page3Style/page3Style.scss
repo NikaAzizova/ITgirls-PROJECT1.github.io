@@ -36,6 +36,18 @@
         display: flex;
         background-color: $color4;
         margin-bottom: 3.75rem;
+        @media screen and (max-width: 1197px){
+           flex-direction: column;
+            
+        }
+        .card__img{
+            @media screen and (max-width: 1197px){
+               max-width: 670px;
+               width: 100%;
+
+                 
+             }
+        }
 
         .card__info {
             margin: 1.88rem 1.88rem 1.88rem 1.88rem;

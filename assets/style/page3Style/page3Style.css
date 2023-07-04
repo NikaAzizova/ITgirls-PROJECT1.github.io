@@ -347,6 +347,11 @@ footer {
   background-color: #FBFBFB;
   margin-bottom: 3.75rem;
 }
+@media screen and (max-width: 1197px) {
+  .cards .cards__wrapper {
+    flex-direction: column;
+  }
+}
 .cards .cards__wrapper .card__info {
   margin: 1.88rem 1.88rem 1.88rem 1.88rem;
 }

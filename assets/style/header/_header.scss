@@ -1,7 +1,3 @@
-    ul {
-        list-style: none;
-    }
-
     .header {
     display: flex;
     justify-content: start;
@@ -9,18 +5,31 @@
     margin-top: 1.82rem;
 }
 
-.header__nav {
-    width: 40rem;
-
+.header__logo {
     display: flex;
-    justify-content: start;
-    align-items: center;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.header__nav {
+    display: inline;
+}
+
+.header__nav ul {
+    list-style: none;
+}
+
+.header__menu {
+    display: inline;
     margin-left: 20.7rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.header__nav li {
+.header__menu li {
+    display: inline;
     margin-left: 1.3rem;
     margin-right: 1.3rem;
     padding-top: 0.24rem;
@@ -39,15 +48,15 @@
     border-bottom: 1px solid transparent;
 }
 
-.header__nav li:first-child {
+.header__menu li:first-child {
     margin-left: 0;
 }
 
-.header__nav li:last-child {
+.header__menu li:last-child {
     margin-right: 0;
 }
 
-.header__nav li:hover {
+.header__menu li:hover {
     padding-top: 0.24rem;
     padding-bottom: 0.24rem;
 
@@ -57,14 +66,18 @@
     transition: all 0.5s ease;
 }
 
-.header__nav span {
+.header__menu span {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
 
-.header__nav span:hover {
+.header__menu span:hover {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.menu__items {
+    display: inline;
 }
 
 @media (min-width: 690px) and (max-width: 1360px) {
@@ -72,7 +85,7 @@
         margin: 1rem 1rem 1rem 1rem;
     }
 
-    .header__nav {
+    .header__menu {
         max-width: 30rem;
         width: 30rem;
     
@@ -82,7 +95,7 @@
         margin-bottom: 0.5rem;
     }
 
-    .header__nav li {
+    .header__menu li {
         margin-left: 0.4rem;
         margin-right: 0.4rem;
         padding-top: 0.2rem;
@@ -95,7 +108,7 @@
         margin: 1rem 1rem 1rem 1rem;
     }
 
-    .header__nav {
+    .header__menu {
         max-width: 30rem;
         width: 30rem;
     
@@ -105,7 +118,7 @@
         margin-bottom: 0.5rem;
     }
 
-    .header__nav li {
+    .header__menu li {
         margin-left: 0.2rem;
         margin-right: 0.2rem;
         padding-top: 0.2rem;

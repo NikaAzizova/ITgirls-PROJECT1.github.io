@@ -80,7 +80,7 @@ line-height: 1.5rem;
     line-height: 1.375rem;
 }
 
-@media (min-width: 690px) and (max-width: 1360px) {
+@media (max-width: 768px) {
     .footer__row {
         justify-content: space-around;
         padding-bottom: 1rem;
@@ -103,10 +103,10 @@ line-height: 1.5rem;
 }
 }
 
-@media (min-width: 320px) and (max-width: 689px) {
+@media (max-width: 320px) {
     .footer__row {
         max-width: 30rem;
-        width: 30rem;
+        width: 25rem;
 
         flex-direction: column;
         align-items: center;
@@ -119,7 +119,8 @@ line-height: 1.5rem;
     }
 
     .footer__row-col {
-        width: 30rem;
+        width: 25rem;
+        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
         row-gap: 0.5rem;
@@ -129,6 +130,7 @@ line-height: 1.5rem;
     .footer__row-logo {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0.8rem;
     }
 
     .footer__row-logo img {

@@ -152,7 +152,16 @@ li {
   display: inline;
 }
 
-@media (min-width: 690px) and (max-width: 1360px) {
+.side__menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .header {
     margin: 1rem 1rem 1rem 1rem;
   }
@@ -160,7 +169,7 @@ li {
     max-width: 30rem;
     width: 30rem;
     justify-content: flex-end;
-    margin-left: 6.5rem;
+    margin-left: 4rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -170,18 +179,26 @@ li {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
   }
+  .header__menu span {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  .header__menu span:hover {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  .side__menu {
+    display: none;
+  }
 }
-@media (min-width: 320px) and (max-width: 689px) {
+@media (max-width: 320px) {
+  .container {
+    min-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .header {
     margin: 1rem 1rem 1rem 1rem;
-  }
-  .header__menu {
-    max-width: 30rem;
-    width: 30rem;
-    justify-content: flex-end;
-    margin-left: 6.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
   }
   .header__menu li {
     margin-left: 0.2rem;
@@ -189,6 +206,14 @@ li {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     line-height: 0.625rem;
+  }
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    max-height: 0;
+    position: fixed;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
   }
 }
 footer {
@@ -268,7 +293,7 @@ footer {
   line-height: 1.375rem;
 }
 
-@media (min-width: 690px) and (max-width: 1360px) {
+@media (max-width: 768px) {
   .footer__row {
     justify-content: space-around;
     padding-bottom: 1rem;
@@ -286,10 +311,10 @@ footer {
     margin-left: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 689px) {
+@media (max-width: 320px) {
   .footer__row {
     max-width: 30rem;
-    width: 30rem;
+    width: 25rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -299,7 +324,8 @@ footer {
     row-gap: 2rem;
   }
   .footer__row-col {
-    width: 30rem;
+    width: 25rem;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     row-gap: 0.5rem;
@@ -308,6 +334,7 @@ footer {
   .footer__row-logo {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0.8rem;
   }
   .footer__row-logo img {
     margin-left: 0;

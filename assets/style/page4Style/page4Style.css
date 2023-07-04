@@ -7,11 +7,23 @@
 html {
   font-size: 100%;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 a,
@@ -256,7 +268,6 @@ footer {
   line-height: 1.375rem;
 }
 
-<<<<<<< HEAD
 @media (min-width: 690px) and (max-width: 1360px) {
   .footer__row {
     justify-content: space-around;
@@ -306,7 +317,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-=======
+}
 main {
   display: flex;
   flex-direction: column;
@@ -324,5 +335,4 @@ main div {
 
 span {
   text-transform: uppercase;
->>>>>>> 9f5e8ad2b1e7bb08d47ae2cd06b382bb8efbc0a8
 }/*# sourceMappingURL=page4Style.css.map */

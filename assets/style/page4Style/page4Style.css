@@ -7,11 +7,23 @@
 html {
   font-size: 100%;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
 
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 a,
@@ -321,12 +333,16 @@ footer {
   line-height: 1.375rem;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
   .container {
     min-width: 690px;
     width: 100%;
     margin: 0 auto;
   }
+=======
+@media (min-width: 690px) and (max-width: 1360px) {
+>>>>>>> ebb2128163039da664286704e9fa73ea854e2dc9
   .footer__row {
     justify-content: space-around;
     padding-bottom: 1rem;

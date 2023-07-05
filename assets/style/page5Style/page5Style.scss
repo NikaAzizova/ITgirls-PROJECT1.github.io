@@ -9,20 +9,23 @@
 }
     .title-h1{
         line-height: 3.75rem;
+        color: $color1;
         span{
             text-transform: uppercase;
+    }   
     }
-}
+
 .certification_items{
     display: flex;
     flex-direction: row;
     .item_1{
-        border: 0.2rem solid $color1;
         margin: 3rem;
     }
     .item_2{
-        border: 0.2rem solid $color1;
         margin: 3rem;
+    }
+    @media screen and (max-width: 1197px){
+        flex-direction: column;
     }
 }
 

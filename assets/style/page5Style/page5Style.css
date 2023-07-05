@@ -353,6 +353,7 @@ footer {
 
 .title-h1 {
   line-height: 3.75rem;
+  color: #333333;
 }
 .title-h1 span {
   text-transform: uppercase;
@@ -363,10 +364,13 @@ footer {
   flex-direction: row;
 }
 .certification_items .item_1 {
-  border: 0.2rem solid #333333;
   margin: 3rem;
 }
 .certification_items .item_2 {
-  border: 0.2rem solid #333333;
   margin: 3rem;
+}
+@media screen and (max-width: 1197px) {
+  .certification_items {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=page5Style.css.map */

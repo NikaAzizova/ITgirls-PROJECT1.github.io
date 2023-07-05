@@ -71,12 +71,32 @@ li {
   font-weight: 300;
   color: #BDBDBD;
 }
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h1 {
+    font-size: 2rem;
+  }
+}
 
 .title-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #BDBDBD;
+}
+@media (max-width: 768px) {
+  .title-h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h2 {
+    font-size: 2rem;
+  }
 }
 
 .header {

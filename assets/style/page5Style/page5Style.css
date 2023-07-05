@@ -344,4 +344,29 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-h1 {
+  line-height: 3.75rem;
+}
+.title-h1 span {
+  text-transform: uppercase;
+}
+
+.certification_items {
+  display: flex;
+  flex-direction: row;
+}
+.certification_items .item_1 {
+  border: 0.2rem solid #333333;
+  margin: 3rem;
+}
+.certification_items .item_2 {
+  border: 0.2rem solid #333333;
+  margin: 3rem;
 }/*# sourceMappingURL=page5Style.css.map */

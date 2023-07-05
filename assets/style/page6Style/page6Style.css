@@ -433,6 +433,12 @@ footer {
     margin-right: auto;
   }
 }
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -440,7 +446,7 @@ footer {
   padding-bottom: 7rem;
 }
 
-.contact__title_color {
+.contact__title-color {
   color: #BDBDBD;
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -465,7 +471,7 @@ footer {
   padding: 2.13rem 0 2.75rem;
 }
 
-.contact__text1_bold {
+.contact__text1-bold {
   font-weight: bold;
 }
 
@@ -475,7 +481,7 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 
-.contact__text2_bold {
+.contact__text2-bold {
   font-weight: bold;
 }
 
@@ -485,6 +491,10 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding: 3.31rem 0 3.94rem;
+}
+
+.contact__button {
+  color: #FFFFFF;
 }
 
 .contact__a {
@@ -500,7 +510,10 @@ footer {
 }
 
 .contact__a:hover {
+  color: #000000;
   background-color: rgba(200, 200, 200, 0.5);
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
 }
 
 .contact__map {

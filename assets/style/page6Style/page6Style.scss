@@ -2,11 +2,11 @@
 @import "../header/header";
 @import "../footer/footer";
 
-// .main__container {
-//   max-width: 73.12rem;
-//   width: 100%;
-//   margin: 0 auto;
-// }
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .contact {
   display: flex;
@@ -16,7 +16,7 @@
   padding-bottom: 7rem;
 }
 
-.contact__title_color {
+.contact__title-color {
   color: $color3;
   font-family: $font;
   font-size: 4rem;
@@ -44,7 +44,7 @@
   padding: 2.13rem 0 2.75rem;
 }
 
-.contact__text1_bold {
+.contact__text1-bold {
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@
   font-family: $font;
 }
 
-.contact__text2_bold {
+.contact__text2-bold {
   font-weight: bold;
 }
 
@@ -65,6 +65,10 @@
   font-weight: 300;
 
   padding: 3.31rem 0 3.94rem;
+}
+
+.contact__button {
+  color: $color5;
 }
 
 .contact__a {
@@ -82,7 +86,10 @@
 }
 
 .contact__a:hover {
+  color: $color2;
   background-color: $color9;
+  border-top: 2px solid $color1;
+  border-bottom: 2px solid $color1;
 }
 
 .contact__map {

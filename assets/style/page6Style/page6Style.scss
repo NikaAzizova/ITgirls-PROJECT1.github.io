@@ -2,11 +2,11 @@
 @import "../header/header";
 @import "../footer/footer";
 
-// .main__container {
-//   max-width: 73.12rem;
-//   width: 100%;
-//   margin: 0 auto;
-// }
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .contact {
   display: flex;
@@ -16,7 +16,7 @@
   padding-bottom: 7rem;
 }
 
-.contact__title_color {
+.contact__title-color {
   color: $color3;
   font-family: $font;
   font-size: 4rem;
@@ -67,6 +67,10 @@
   padding: 3.31rem 0 3.94rem;
 }
 
+.contact__button {
+  color: $color5;
+}
+
 .contact__a {
   color: $color5;
   font-size: 0.75rem;
@@ -82,7 +86,10 @@
 }
 
 .contact__a:hover {
+  color: $color2;
   background-color: $color9;
+  border-top: 2px solid $color1;
+  border-bottom: 2px solid $color1;
 }
 
 .contact__map {

@@ -345,6 +345,12 @@ footer {
     margin-right: auto;
   }
 }
+.main__container {
+  max-width: 73.12rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -352,7 +358,7 @@ footer {
   padding-bottom: 7rem;
 }
 
-.contact__title_color {
+.contact__title-color {
   color: #BDBDBD;
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -399,6 +405,10 @@ footer {
   padding: 3.31rem 0 3.94rem;
 }
 
+.contact__button {
+  color: #FFFFFF;
+}
+
 .contact__a {
   color: #FFFFFF;
   font-size: 0.75rem;
@@ -412,7 +422,10 @@ footer {
 }
 
 .contact__a:hover {
+  color: #000000;
   background-color: rgba(200, 200, 200, 0.5);
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
 }
 
 .contact__map {

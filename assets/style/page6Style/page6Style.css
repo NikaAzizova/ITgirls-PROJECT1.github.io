@@ -432,4 +432,79 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 10.25rem;
+  padding-bottom: 7rem;
+}
+
+.contact__title_color {
+  color: #BDBDBD;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  padding-top: 3.94rem;
+}
+
+.contact__title {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  padding-bottom: 1.87rem;
+}
+
+.contact__text1 {
+  color: #333333;
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  padding: 2.13rem 0 2.75rem;
+}
+
+.contact__text1_bold {
+  font-weight: bold;
+}
+
+.contact__text2 {
+  color: #333333;
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact__text2_bold {
+  font-weight: bold;
+}
+
+.contact__text3 {
+  color: #333333;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 3.31rem 0 3.94rem;
+}
+
+.contact__a {
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background-color: #333333;
+  padding: 1.87rem 3.62rem 1.81rem 4.44rem;
+}
+
+.contact__a:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.contact__map {
+  max-width: 41.75rem;
+  max-height: 29.125rem;
+  border: 1px solid #333333;
 }/*# sourceMappingURL=page6Style.css.map */

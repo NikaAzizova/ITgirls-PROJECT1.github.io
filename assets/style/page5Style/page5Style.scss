@@ -1,3 +1,28 @@
 @import '../template';
 @import '../header/header';
 @import '../footer/footer';
+
+.main__container {
+    max-width: 73.12rem;
+    width: 100%;
+    margin: 0 auto;
+}
+    .title-h1{
+        line-height: 3.75rem;
+        span{
+            text-transform: uppercase;
+    }
+}
+.certification_items{
+    display: flex;
+    flex-direction: row;
+    .item_1{
+        border: 0.2rem solid $color1;
+        margin: 3rem;
+    }
+    .item_2{
+        border: 0.2rem solid $color1;
+        margin: 3rem;
+    }
+}
+

@@ -27,7 +27,7 @@ z-index: 2;
 
 .header__menu {
     display: inline;
-    margin-left: 20.7rem;
+    margin-left: 16.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -70,18 +70,14 @@ z-index: 2;
     transition: all 0.5s ease;
 }
 
-#item span {
+.menu__link span {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
-    border: none;
 }
 
-#item span:hover {
+.menu__link span:hover {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
-    border: none;
 }
 
 .menu__items {
@@ -124,14 +120,14 @@ z-index: 2;
         padding-bottom: 0.2rem;
     }
 
-    #item span {
+    .menu__link span {
         margin-left: 0.2rem;
         margin-right: 0.2rem;
 
         border: none;
     }
     
-    #item span:hover {
+    .menu__link span:hover {
         margin-left: 0.2rem;
         margin-right: 0.2rem;
 
@@ -158,14 +154,14 @@ z-index: 2;
         margin: 1rem 1rem 1rem 1rem;
     }
 
-    #item span {
+    .menu__link span {
         margin-left: 0;
         margin-right: 0;
 
         background: none!important;
     }
     
-    #item span:hover {
+    .menu__link span:hover {
         margin-left: 0;
         margin-right: 0;
 

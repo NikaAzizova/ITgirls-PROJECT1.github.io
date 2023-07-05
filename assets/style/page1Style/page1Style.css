@@ -480,7 +480,7 @@ footer {
     background: url(../../image/page1_img/background/building_s.png);
   }
 }
-.box-main .box-main__img .box-main__buttom {
+.box-main .box-main__img .box-main__button {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -490,6 +490,18 @@ footer {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   background: #FFFFFF;
+  color: #333333;
+}
+.box-main .box-main__img .box-main__button:hover {
+  width: 13.875rem;
+  height: 4.4375rem;
+  border: none;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: rgba(200, 200, 200, 0.5);
   color: #333333;
 }
 

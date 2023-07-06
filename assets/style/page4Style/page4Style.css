@@ -36,15 +36,13 @@ html {
     width: 100%;
     margin: 0 auto;
   }
-<<<<<<< HEAD
+}
   @media screen and (max-width: 1197px) {
     .line .content .content-dw .box {
       flex-direction: column;
     }
-=======
 }
 
->>>>>>> c26e43435611dd7391d1aef7e6afb1b77275fa45
 a,
 a:visited {
   color: inherit;
@@ -473,12 +471,13 @@ footer {
   max-width: 17.37rem;
   width: 100%;
 }
-.project .project__title {
+.project-main__title {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   position: relative;
 }
-.project .project__title span {
+
+span {
   font-weight: 300;
   color: #BDBDBD;
 }
@@ -486,7 +485,7 @@ footer {
 .line {
   margin-bottom: 2.44rem;
 }
-.line .line {
+.line-up {
   width: 73.125rem;
   height: 0.0625rem;
 }
@@ -494,19 +493,19 @@ footer {
 .content {
   margin-bottom: 1.875rem;
 }
-.content .content__img {
+.content-dw {
+  margin-bottom: 7.5rem;
+}
+.content-main__img {
   width: 73.125rem;
   height: 27.1875rem;
-}
-.content .content__img-dw {
-  margin-bottom: 7.5rem;
 }
 
 .box {
   flex-basis: 20%;
   display: flex;
   -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   margin-bottom: 1.875rem;
 }
 .box-item {
@@ -519,7 +518,7 @@ footer {
   width: 26.1875rem;
   height: 26.75rem;
 }
-.boxitem1__text {
+.box-item1__text {
   color: #000000;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;

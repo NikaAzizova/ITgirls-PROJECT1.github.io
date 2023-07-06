@@ -79,7 +79,10 @@ html {
   font-weight: 300;
   line-height: 1.56rem;
   }
-
+  @media screen and (max-width: 1197px) {
+    .line .content .content-dw .box {
+      flex-direction: column;
+    }
 a,
 a:visited {
   color: inherit;

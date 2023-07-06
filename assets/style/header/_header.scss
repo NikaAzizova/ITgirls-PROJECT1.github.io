@@ -6,7 +6,7 @@
 }
 
 .header__logo {
-z-index: 2;
+    z-index: 2;
 
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ z-index: 2;
 
 .header__menu {
     display: inline;
-    margin-left: 16.2rem;
+    margin-left: 19.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -93,14 +93,9 @@ z-index: 2;
 }
 
 @media (max-width: 768px) {
-.container {
-    min-width: 690px;
-    width: 100%;
-    margin: 0 auto;
-}
-
     .header {
-        margin: 1rem 1rem 1rem 1rem;
+        justify-content: space-between;
+        margin: 1rem 0 1rem 0;
     }
 
     .header__menu {
@@ -118,6 +113,10 @@ z-index: 2;
         margin-right: 0.4rem;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
+    }
+
+    .header__menu li:last-child {
+        margin-right: 0;
     }
 
     .menu__link span {
@@ -145,7 +144,7 @@ z-index: 2;
 
 @media (max-width: 320px){
     .header {
-        margin: 1rem 1rem 1rem 1rem;
+        margin: 1rem 0 1rem 0;
     }
 
     .menu__link span {
@@ -163,12 +162,13 @@ z-index: 2;
     }
 
     #menuToggle {
-    position: relative;
-    top: 0;
-    left: 14rem;
+    left: 0rem;
     z-index: 1;
+    position: relative;
 
     display: block;
+    margin-top: -1rem;
+    
 
     -webkit-user-select: none;
     user-select: none;
@@ -191,8 +191,6 @@ z-index: 2;
     width: 2rem;
     height: 2rem;
     position: absolute;
-    top: 0;
-    left: 0;
     
     cursor: pointer;
     
@@ -203,11 +201,12 @@ z-index: 2;
 }
 
 #menuToggle span {
-    display: block;
+    position: relative;
     width: 2.063rem;
     height: 0.27rem;
+
+    display: block;
     margin-bottom: 0.313rem;
-    position: relative;
     
     background: $color8;
     border-radius: 3px;
@@ -246,10 +245,11 @@ z-index: 2;
 
 #menu {
     position: absolute;
-    width: 12rem;
-    margin: -6rem -20.5rem  -2rem;
+    width: 26rem;
+    height: 21rem;
+    margin: -7rem -22.5rem  -2rem;
     padding: 2rem;
-    padding-top: 9rem;
+    padding-top: 12rem;
     
     background: $color6;
     list-style-type: none;

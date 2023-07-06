@@ -25,6 +25,13 @@ html {
     margin: 0 auto;
   }
 }
+@media (max-width: 320px) {
+  .container {
+    min-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 a,
 a:visited {
@@ -201,12 +208,7 @@ li {
     opacity: 0;
   }
 }
-@media (min-width: 320px) and (max-width: 690px) {
-  .container {
-    min-width: 290px;
-    width: 100%;
-    margin: 0 auto;
-  }
+@media (max-width: 320px) {
   .header {
     margin: 1rem 1rem 1rem 1rem;
   }

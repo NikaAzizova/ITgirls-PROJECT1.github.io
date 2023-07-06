@@ -12,6 +12,11 @@ html {
     font-size: 80%;
   }
 }
+@media (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 .container {
   max-width: 1170px;
@@ -457,7 +462,8 @@ footer {
   display: flex;
   justify-content: center;
 }
-.main .main__container {
+
+.main__container {
   display: flex;
   height: 246.88rem;
   flex-direction: column;
@@ -465,23 +471,24 @@ footer {
   align-items: center;
 }
 @media (max-width: 768px) {
-  .main .main__container {
+  .main__container {
     height: 180rem;
   }
 }
 @media (max-width: 320px) {
-  .main .main__container {
+  .main__container {
     height: 140rem;
   }
 }
-.main .main__container .box-main {
+
+.box-main {
   display: flex;
   flex-basis: 25%;
   width: 100%;
   justify-content: center;
 }
 @media (max-width: 320px) {
-  .main .main__container .box-main {
+  .box-main {
     flex-direction: column;
     justify-content: space-between;
     background: url(../../image/page1_img/background/building.png);
@@ -489,20 +496,20 @@ footer {
     background-size: cover;
   }
 }
-.main .main__container .box-main .box-main__title {
+.box-main .box-main__title {
   display: flex;
   flex-basis: 34.2%;
   align-items: center;
 }
 @media (max-width: 320px) {
-  .main .main__container .box-main .box-main__title {
+  .box-main .box-main__title {
     flex-basis: 70%;
     text-align: center;
     justify-content: center;
     background: linear-gradient(rgba(250, 250, 253, 0.808), 90%, rgba(253, 251, 252, 0));
   }
 }
-.main .main__container .box-main .box-main__img {
+.box-main .box-main__img {
   display: flex;
   flex-basis: 65.8%;
   justify-content: flex-start;
@@ -512,13 +519,13 @@ footer {
   background-size: cover;
 }
 @media (max-width: 320px) {
-  .main .main__container .box-main .box-main__img {
+  .box-main .box-main__img {
     background: none;
     flex-basis: 10%;
     align-items: flex-end;
   }
 }
-.main .main__container .box-main .box-main__img .box-main__buttom {
+.box-main .box-main__img .box-main__buttom {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -530,52 +537,56 @@ footer {
   background: #FFFFFF;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .main .main__container .box-main .box-main__img .box-main__buttom {
+    width: 8rem;
+    height: 3.3rem;
+  }
+}
 .main .main__container .about {
   display: flex;
   flex-basis: 11%;
   width: 100%;
   background-color: #FBFBFB;
 }
-.main .main__container .about .about__img {
+.about .about__img {
   display: flex;
   flex-basis: 57.25%;
   justify-content: center;
 }
 @media (max-width: 320px) {
-  .main .main__container .about .about__img {
+  .about .about__img {
     display: none;
   }
 }
-.main .main__container .about .about__img .about__first-column {
+.about .about__img .about__first-column {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 1.88rem;
 }
-.main .main__container .about .about__img .about__first-column .pattern1 {
+.about .about__img .about__first-column .pattern1 {
   width: 16.875rem;
   height: 16.5625rem;
   margin-top: 1.88rem;
 }
-.main .main__container .about .about__img .about__first-column .pattern2 {
+.about .about__img .about__first-column .pattern2 {
   width: 16.875rem;
   height: 8.75rem;
-  flex-shrink: 0;
   margin-top: 1.88rem;
   margin-bottom: -3.88rem;
 }
-.main .main__container .about .about__img .about__second-column {
+.about .about__img .about__second-column {
   width: 16.875rem;
   height: 21.5625rem;
-  flex-shrink: 0;
   margin-top: 3.75rem;
 }
 @media (max-width: 768px) {
-  .main .main__container .about .about__img .about__second-column {
+  .about .about__img .about__second-column {
     display: none;
   }
 }
-.main .main__container .about .about__content {
+.about .about__content {
   display: flex;
   flex-basis: 42.75%;
   flex-direction: column;
@@ -583,12 +594,12 @@ footer {
   align-items: flex-start;
 }
 @media (max-width: 320px) {
-  .main .main__container .about .about__content {
+  .about .about__content {
     flex-basis: 100%;
     align-items: center;
   }
 }
-.main .main__container .about .about__content .about__text {
+.about .about__content .about__text {
   width: 25rem;
   height: 12.5rem;
   color: #000000;
@@ -599,12 +610,12 @@ footer {
   line-height: 1.5625rem;
 }
 @media (max-width: 320px) {
-  .main .main__container .about .about__content .about__text {
+  .about .about__content .about__text {
     width: 90%;
     text-align: center;
   }
 }
-.main .main__container .about .about__content .about__button {
+.about .about__content .about__button {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -616,6 +627,12 @@ footer {
   background: #FFFFFF;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .main .main__container .about .about__content .about__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
+}
 .main .main__container .mission {
   display: flex;
   flex-basis: 6.78%;
@@ -623,24 +640,24 @@ footer {
   justify-content: space-between;
   width: 100%;
 }
-.main .main__container .mission .mission__content {
+.mission .mission__content {
   display: flex;
   flex-basis: 53.73%;
   gap: 3%;
 }
 @media (max-width: 320px) {
-  .main .main__container .mission .mission__content {
+  .mission .mission__content {
     flex-direction: column;
     gap: 7%;
   }
 }
-.main .main__container .mission .mission__content .mission__statement {
+.mission .mission__content .mission__statement {
   display: flex;
   flex-basis: 50%;
   justify-content: space-between;
   align-items: center;
 }
-.main .main__container .mission .mission__content .mission__statement .mission__number {
+.mission .mission__content .mission__statement .mission__number {
   flex-basis: 20.51%;
   color: #F2F2F2;
   font-size: 12.5rem;
@@ -650,11 +667,11 @@ footer {
   line-height: normal;
 }
 @media (max-width: 768px) {
-  .main .main__container .mission .mission__content .mission__statement .mission__number {
+  .mission .mission__content .mission__statement .mission__number {
     display: none;
   }
 }
-.main .main__container .mission .mission__content .mission__statement .mission__text {
+.mission .mission__content .mission__statement .mission__text {
   justify-self: center;
   flex-basis: 71.8%;
   color: #333333;
@@ -665,13 +682,14 @@ footer {
   line-height: 2.25rem;
 }
 @media (max-width: 320px) {
-  .main .main__container .mission .mission__content .mission__statement .mission__text {
+  .mission .mission__content .mission__statement .mission__text {
     flex-basis: 100%;
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
-.main .main__container .projects {
+
+.projects {
   display: flex;
   flex-basis: 19.37%;
   flex-direction: column;
@@ -679,44 +697,44 @@ footer {
   width: 100%;
 }
 @media (max-width: 320px) {
-  .main .main__container .projects {
+  .projects {
     flex-basis: 22%;
   }
 }
-.main .main__container .projects .projects__content {
+.projects .projects__content {
   display: flex;
   flex-direction: column;
   gap: 1.88rem;
 }
-.main .main__container .projects .projects__content .projects__first-line {
+.projects .projects__content .projects__first-line {
   display: flex;
   gap: 1.88rem;
 }
 @media (max-width: 320px) {
-  .main .main__container .projects .projects__content .projects__first-line {
+  .projects .projects__content .projects__first-line {
     flex-direction: column;
   }
 }
 @media (max-width: 768px) {
-  .main .main__container .projects .projects__content .projects__first-line .project__img {
+  .projects .projects__content .projects__first-line .project__img {
     width: 30rem;
   }
 }
 @media (max-width: 320px) {
-  .main .main__container .projects .projects__content .projects__first-line .project__img {
+  .projects .projects__content .projects__first-line .project__img {
     width: 100%;
   }
 }
-.main .main__container .projects .projects__content .projects__first-line .projects__wrapper {
+.projects .projects__content .projects__first-line .projects__wrapper {
   flex-basis: 50%;
   background: url(../../image/page1_img/background/projects_background.png);
 }
 @media (max-width: 768px) {
-  .main .main__container .projects .projects__content .projects__first-line .projects__wrapper {
+  .projects .projects__content .projects__first-line .projects__wrapper {
     max-width: 30rem;
   }
 }
-.main .main__container .projects .projects__content .projects__first-line .projects__wrapper .projects__link {
+.projects .projects__content .projects__first-line .projects__wrapper .projects__link {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -724,7 +742,7 @@ footer {
   gap: 0.9rem;
   background-color: rgba(51, 51, 51, 0.74);
 }
-.main .main__container .projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-title {
+.projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-title {
   width: 14.56rem;
   color: #FFFFFF;
   font-size: 4rem;
@@ -734,7 +752,7 @@ footer {
   line-height: 4rem;
   margin-left: 4.94rem;
 }
-.main .main__container .projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-button {
+.projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-button {
   font-size: 0.75rem;
   font-family: "Gothic A1", sans-serif;
   font-style: normal;
@@ -743,22 +761,22 @@ footer {
   color: #FFFFFF;
   margin-left: 4.94rem;
 }
-.main .main__container .projects .projects__content .projects__second-line {
+.projects .projects__content .projects__second-line {
   gap: 1.88rem;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  .main .main__container .projects .projects__content .projects__second-line {
+  .projects .projects__content .projects__second-line {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .main .main__container .projects .projects__content .projects__second-line .project__img {
+  .projects .projects__content .projects__second-line .project__img {
     max-width: 30rem;
   }
 }
-.main .main__container .projects .projects__button {
+.projects .projects__button {
   align-self: flex-end;
   width: 13.875rem;
   height: 4.4375rem;
@@ -771,6 +789,12 @@ footer {
   background: #333333;
   color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  .main .main__container .projects .projects__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
+}
 .main .main__container .contacts {
   display: flex;
   flex-basis: 15.27%;
@@ -779,28 +803,33 @@ footer {
   gap: 1.88rem;
 }
 @media (max-width: 768px) {
-  .main .main__container .contacts {
+  .contacts {
     background-image: url(../../image/page1_img/image/man.png);
     background-size: cover;
   }
 }
 @media (max-width: 320px) {
-  .main .main__container .contacts {
+  .contacts {
     background-image: none;
   }
 }
-.main .main__container .contacts .contacts__content {
+.contacts .contacts__content {
   display: flex;
   flex-basis: 61.19%;
   align-items: center;
   gap: 1.88rem;
 }
+@media (max-width: 768px) {
+  .contacts .contacts__content {
+    flex-basis: 80%;
+  }
+}
 @media (max-width: 320px) {
-  .main .main__container .contacts .contacts__content {
+  .contacts .contacts__content {
     flex-basis: 90%;
   }
 }
-.main .main__container .contacts .contacts__content .contact__form {
+.contacts .contacts__content .contact__form {
   display: flex;
   flex-basis: 12.56%;
   height: 100%;
@@ -808,8 +837,8 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.main .main__container .contacts .contacts__content .contact__form .contact__input,
-.main .main__container .contacts .contacts__content .contact__form .contact__textarea {
+.contacts .contacts__content .contact__form .contact__input,
+.contacts .contacts__content .contact__form .contact__textarea {
   width: 24.4375rem;
   height: 2.875rem;
   background-color: #F3F3F3;
@@ -822,23 +851,23 @@ footer {
   line-height: normal;
   letter-spacing: 0.035rem;
 }
-.main .main__container .contacts .contacts__content .contact__form .contact__textarea {
+.contacts .contacts__content .contact__form .contact__textarea {
   height: 9.1875rem;
 }
 @media (max-width: 768px) {
-  .main .main__container .contacts .contacts__content .contact__form .contact__textarea {
+  .contacts .contacts__content .contact__form .contact__textarea {
     height: 4rem;
   }
 }
-.main .main__container .contacts .contacts__img {
+.contacts .contacts__img {
   flex-basis: 64.02%;
 }
 @media (max-width: 768px) {
-  .main .main__container .contacts .contacts__img {
+  .contacts .contacts__img {
     display: none;
   }
 }
-.main .main__container .contacts .contacts__button {
+.contacts .contacts__button {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -849,4 +878,10 @@ footer {
   text-transform: uppercase;
   background: #333333;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .main .main__container .contacts .contacts__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
 }/*# sourceMappingURL=page1Style.css.map */

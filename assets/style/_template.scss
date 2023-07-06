@@ -22,6 +22,10 @@ $font2: 'Open Sans', sans-serif;
     text-transform: uppercase;
     background: $bg;
     color: $color;
+    @media screen and (max-width: 768px){
+        width: 8rem;
+        height: 3.3rem;
+    }
 }
 
 *{
@@ -34,6 +38,9 @@ html{
     font-size: 100%;
     @media (max-width:768px){
         font-size: 80%;
+    }
+    @media (max-width:320px){
+        font-size: 60%;
     }
 }
 

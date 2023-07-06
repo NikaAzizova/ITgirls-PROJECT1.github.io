@@ -12,6 +12,11 @@ html {
     font-size: 80%;
   }
 }
+@media (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 .container {
   max-width: 1170px;
@@ -582,6 +587,12 @@ footer {
   text-transform: uppercase;
   background: #FFFFFF;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .cards .cards__wrapper .card__info .card__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
 }
 .cards .cards__wrapper .card__info .card__button .card__button-arrow {
   margin-left: 2%;

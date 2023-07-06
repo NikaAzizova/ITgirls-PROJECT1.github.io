@@ -12,6 +12,11 @@ html {
     font-size: 80%;
   }
 }
+@media (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 .container {
   max-width: 1170px;
@@ -537,6 +542,12 @@ footer {
   background: #FFFFFF;
   color: #333333;
 }
+@media screen and (max-width: 768px) {
+  .main .main__container .box-main .box-main__img .box-main__buttom {
+    width: 8rem;
+    height: 3.3rem;
+  }
+}
 .main .main__container .about {
   display: flex;
   flex-basis: 11%;
@@ -622,6 +633,12 @@ footer {
   text-transform: uppercase;
   background: #FFFFFF;
   color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .main .main__container .about .about__content .about__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
 }
 .main .main__container .mission {
   display: flex;
@@ -778,6 +795,12 @@ footer {
   background: #333333;
   color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  .main .main__container .projects .projects__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
+}
 .main .main__container .contacts {
   display: flex;
   flex-basis: 15.27%;
@@ -856,4 +879,10 @@ footer {
   text-transform: uppercase;
   background: #333333;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .main .main__container .contacts .contacts__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
 }/*# sourceMappingURL=page1Style.css.map */

@@ -2,18 +2,44 @@
 @import "../header/header";
 @import "../footer/footer";
 
-.main__container {
-  max-width: 73.12rem;
-  width: 100%;
-  margin: 0 auto;
-}
+// .main__container {
+//   max-width: 73.12rem;
+//   width: 100%;
+//   margin: 0 auto;
+// }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  gap: 10.25rem;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "h map"
+    "t1 map"
+    "t2 map"
+    "t3 map"
+    "but map";
   padding-bottom: 7rem;
+
+  @media screen and (max-width: 1170px) {
+    padding-bottom: 4rem;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.contact__titles {
+  padding-top: 3.94rem;
+  padding-bottom: 1.87rem;
+  grid-area: h;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    order: 1;
+  }
 }
 
 .contact__title-color {
@@ -22,8 +48,6 @@
   font-size: 4rem;
   font-weight: 300;
   line-height: 4rem;
-
-  padding-top: 3.94rem;
 }
 
 .contact__title {
@@ -32,8 +56,6 @@
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
-
-  padding-bottom: 1.87rem;
 }
 
 .contact__text1 {
@@ -41,7 +63,15 @@
   font-size: 1.125rem;
   font-family: $font;
 
+  display: flex;
+  flex-direction: column;
   padding: 2.13rem 0 2.75rem;
+  grid-area: t1;
+
+  @media screen and (max-width: 767px) {
+    padding: 1rem 0 1rem;
+    order: 1;
+  }
 }
 
 .contact__text1-bold {
@@ -52,6 +82,12 @@
   color: $color1;
   font-size: 1.125rem;
   font-family: $font;
+  grid-area: t2;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 1rem;
+    order: 3;
+  }
 }
 
 .contact__text2-bold {
@@ -63,12 +99,24 @@
   font-size: 1rem;
   font-family: $font;
   font-weight: 300;
-
   padding: 3.31rem 0 3.94rem;
+
+  grid-area: t3;
+
+  @media screen and (max-width: 767px) {
+    padding: 1rem 0 3rem;
+    order: 3;
+  }
 }
 
 .contact__button {
   color: $color5;
+  grid-area: but;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 4rem;
+    order: 3;
+  }
 }
 
 .contact__a {
@@ -96,4 +144,11 @@
   max-width: 41.75rem;
   max-height: 29.125rem;
   border: 1px solid $color1;
+  grid-area: map;
+
+  @media screen and (max-width: 767px) {
+    max-width: 25rem;
+    max-height: 35rem;
+    order: 2;
+  }
 }

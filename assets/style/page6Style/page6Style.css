@@ -462,17 +462,37 @@ footer {
     margin-right: auto;
   }
 }
-.main__container {
-  max-width: 73.12rem;
-  width: 100%;
-  margin: 0 auto;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "h map" "t1 map" "t2 map" "t3 map" "but map";
+  padding-bottom: 7rem;
+}
+@media screen and (max-width: 1170px) {
+  .contact {
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  gap: 10.25rem;
-  padding-bottom: 7rem;
+.contact__titles {
+  padding-top: 3.94rem;
+  padding-bottom: 1.87rem;
+  grid-area: h;
+}
+@media screen and (max-width: 767px) {
+  .contact__titles {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    order: 1;
+  }
 }
 
 .contact__title-color {
@@ -481,7 +501,6 @@ footer {
   font-size: 4rem;
   font-weight: 300;
   line-height: 4rem;
-  padding-top: 3.94rem;
 }
 
 .contact__title {
@@ -490,14 +509,22 @@ footer {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
-  padding-bottom: 1.87rem;
 }
 
 .contact__text1 {
   color: #333333;
   font-size: 1.125rem;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
   padding: 2.13rem 0 2.75rem;
+  grid-area: t1;
+}
+@media screen and (max-width: 767px) {
+  .contact__text1 {
+    padding: 1rem 0 1rem;
+    order: 1;
+  }
 }
 
 .contact__text1-bold {
@@ -508,6 +535,13 @@ footer {
   color: #333333;
   font-size: 1.125rem;
   font-family: "Roboto", sans-serif;
+  grid-area: t2;
+}
+@media screen and (max-width: 767px) {
+  .contact__text2 {
+    padding-top: 1rem;
+    order: 3;
+  }
 }
 
 .contact__text2-bold {
@@ -520,10 +554,24 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding: 3.31rem 0 3.94rem;
+  grid-area: t3;
+}
+@media screen and (max-width: 767px) {
+  .contact__text3 {
+    padding: 1rem 0 3rem;
+    order: 3;
+  }
 }
 
 .contact__button {
   color: #FFFFFF;
+  grid-area: but;
+}
+@media screen and (max-width: 767px) {
+  .contact__button {
+    padding-bottom: 4rem;
+    order: 3;
+  }
 }
 
 .contact__a {
@@ -549,4 +597,12 @@ footer {
   max-width: 41.75rem;
   max-height: 29.125rem;
   border: 1px solid #333333;
+  grid-area: map;
+}
+@media screen and (max-width: 767px) {
+  .contact__map {
+    max-width: 25rem;
+    max-height: 35rem;
+    order: 2;
+  }
 }/*# sourceMappingURL=page6Style.css.map */

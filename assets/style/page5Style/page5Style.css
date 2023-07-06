@@ -27,7 +27,11 @@ html {
 }
 @media (max-width: 320px) {
   .container {
+<<<<<<< HEAD
     min-width: 290px;
+=======
+    max-width: 290px;
+>>>>>>> baf274cf4127dcccc9201e877dd8af3165a15ee9
     width: 100%;
     margin: 0 auto;
   }
@@ -71,12 +75,32 @@ li {
   font-weight: 300;
   color: #BDBDBD;
 }
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h1 {
+    font-size: 2rem;
+  }
+}
 
 .title-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #BDBDBD;
+}
+@media (max-width: 768px) {
+  .title-h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h2 {
+    font-size: 2rem;
+  }
 }
 
 .header {

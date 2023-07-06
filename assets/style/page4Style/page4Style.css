@@ -27,7 +27,11 @@ html {
 }
 @media (max-width: 320px) {
   .container {
+<<<<<<< HEAD
     min-width: 290px;
+=======
+    max-width: 290px;
+>>>>>>> baf274cf4127dcccc9201e877dd8af3165a15ee9
     width: 100%;
     margin: 0 auto;
   }
@@ -71,12 +75,32 @@ li {
   font-weight: 300;
   color: #BDBDBD;
 }
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h1 {
+    font-size: 2rem;
+  }
+}
 
 .title-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #BDBDBD;
+}
+@media (max-width: 768px) {
+  .title-h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h2 {
+    font-size: 2rem;
+  }
 }
 
 .header {
@@ -434,4 +458,62 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.project {
+  max-width: 17.37rem;
+  width: 100%;
+}
+.project .project__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  position: relative;
+}
+.project .project__title span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
+
+.line {
+  margin-bottom: 2.44rem;
+}
+.line .line {
+  width: 73.125rem;
+  height: 0.0625rem;
+}
+
+.content {
+  margin-bottom: 1.875rem;
+}
+.content .content__img {
+  width: 73.125rem;
+  height: 27.1875rem;
+}
+.content .content__img-dw {
+  margin-bottom: 7.5rem;
+}
+
+.box {
+  flex-basis: 20%;
+  display: flex;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+.box-item {
+  flex-basis: content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box-item__img {
+  width: 26.1875rem;
+  height: 26.75rem;
+}
+.boxitem1__text {
+  color: #000000;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.56rem;
 }/*# sourceMappingURL=page4Style.css.map */

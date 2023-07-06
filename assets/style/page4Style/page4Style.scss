@@ -1,3 +1,58 @@
 @import '../template';
 @import '../header/header';
 @import '../footer/footer';
+.project {
+    max-width: 17.37rem;
+    width: 100%;
+    .project__title {
+        font-family: $font;
+        font-size: 4rem;
+        position: relative;
+        span {
+        font-weight: 300;
+        color: $color3;
+        }
+    }
+}
+
+.line {
+    margin-bottom: 2.44rem;
+    .line {
+        width: 73.125rem;
+        height: 0.0625rem;
+    }
+}
+.content {
+    margin-bottom: 1.875rem;
+    .content__img {
+        width: 73.125rem;
+        height: 27.1875rem;
+        &-dw {
+            margin-bottom: 7.5rem;
+        }
+    }
+}
+.box {
+    flex-basis: 20%;
+    display: flex;
+    column-gap: 1.25rem;
+    margin-bottom: 1.875rem;
+    &-item {
+        flex-basis: content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-item__img {
+        width: 26.1875rem;
+        height: 26.75rem;
+    }
+    &item1__text {
+        color: $color2;
+        font-size: 1rem;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.56rem;
+    }
+}

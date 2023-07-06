@@ -27,7 +27,11 @@ html {
 }
 @media (max-width: 320px) {
   .container {
+<<<<<<< HEAD
     min-width: 290px;
+=======
+    max-width: 290px;
+>>>>>>> baf274cf4127dcccc9201e877dd8af3165a15ee9
     width: 100%;
     margin: 0 auto;
   }
@@ -71,12 +75,32 @@ li {
   font-weight: 300;
   color: #BDBDBD;
 }
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h1 {
+    font-size: 2rem;
+  }
+}
 
 .title-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #BDBDBD;
+}
+@media (max-width: 768px) {
+  .title-h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h2 {
+    font-size: 2rem;
+  }
 }
 
 .header {
@@ -439,6 +463,22 @@ footer {
   max-width: 17.36019rem;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .main__project-variants-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__project-variants-wrapper {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .main__project-variants-wrapper .main__project-variants-title {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
@@ -447,6 +487,16 @@ footer {
 .main__project-variants-wrapper .main__project-variants-title span {
   font-weight: 300;
   color: #BDBDBD;
+}
+@media screen and (max-width: 768px) {
+  .main__project-variants-wrapper .main__project-variants-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__project-variants-wrapper .main__project-variants-title {
+    text-align: center;
+  }
 }
 
 .main__project-variants-title::after {
@@ -458,7 +508,7 @@ footer {
   bottom: -17px;
   left: 0;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 768px) {
   .main__project-variants-title::after {
     content: none;
     text-align: center;
@@ -470,45 +520,57 @@ footer {
   background-color: #FBFBFB;
   margin-bottom: 3.75rem;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 768px) {
   .cards .cards__wrapper {
     flex-direction: column;
-    max-width: 670px;
+    max-width: 1100px;
     width: 100%;
   }
 }
-.cards .card__info {
-  margin: 1.88rem 1.88rem 1.88rem 1.88rem;
+.cards .cards__wrapper .card__img {
+  text-align: center;
+}
+.cards .cards__wrapper .card__img .card__img-list {
+  max-width: 1170px;
+  width: 100%;
+}
+.cards .cards__wrapper .card__info {
+  margin: 3% 3% 3% 3%;
 }
 @media screen and (max-width: 768px) {
-  .cards .card__info {
+  .cards .cards__wrapper .card__info {
     text-align: center;
   }
 }
-.cards .card__info .card__title {
+.cards .cards__wrapper .card__info .card__title {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
   color: #BDBDBD;
-  margin-bottom: 4.56rem;
+  margin-bottom: 23%;
 }
-.cards .card__info .card__text {
+@media screen and (max-width: 768px) {
+  .cards .cards__wrapper .card__info .card__title {
+    margin-bottom: 10%;
+  }
+}
+.cards .cards__wrapper .card__info .card__text {
   max-width: 25rem;
   min-height: 7.5rem;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 7%;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: #000000;
 }
 @media screen and (max-width: 768px) {
-  .cards .card__info .card__text {
+  .cards .cards__wrapper .card__info .card__text {
     max-width: 670px;
     width: 100%;
   }
 }
-.cards .card__info .card__button {
+.cards .cards__wrapper .card__info .card__button {
   width: 13.875rem;
   height: 4.4375rem;
   border: none;
@@ -520,10 +582,21 @@ footer {
   background: #FFFFFF;
   color: #333333;
 }
-.cards .card__info .card__button .card__button-arrow {
-  margin-left: 1.25rem;
+.cards .cards__wrapper .card__info .card__button .card__button-arrow {
+  margin-left: 2%;
 }
-
-.cards__wrapper:last-child {
-  margin-bottom: 14.56rem;
+.cards .cards__wrapper:last-child {
+  margin-bottom: 20%;
+}
+@media screen and (max-width: 768px) {
+  .cards .cards__wrapper:last-child {
+    margin-bottom: 7%;
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=page3Style.css.map */

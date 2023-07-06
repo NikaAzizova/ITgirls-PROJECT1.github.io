@@ -12,6 +12,11 @@ html {
     font-size: 80%;
   }
 }
+@media (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 .container {
   max-width: 1170px;

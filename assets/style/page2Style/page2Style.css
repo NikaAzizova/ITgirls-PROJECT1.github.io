@@ -12,6 +12,11 @@ html {
     font-size: 80%;
   }
 }
+@media (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
 
 .container {
   max-width: 1170px;
@@ -71,12 +76,32 @@ li {
   font-weight: 300;
   color: #BDBDBD;
 }
+@media (max-width: 768px) {
+  .title-h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h1 {
+    font-size: 2rem;
+  }
+}
 
 .title-h2 {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   font-weight: 300;
   color: #BDBDBD;
+}
+@media (max-width: 768px) {
+  .title-h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .title-h2 {
+    font-size: 2rem;
+  }
 }
 
 .header {
@@ -107,7 +132,7 @@ li {
 
 .header__menu {
   display: inline;
-  margin-left: 16.2rem;
+  margin-left: 19.2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -169,13 +194,9 @@ li {
 }
 
 @media (max-width: 768px) {
-  .container {
-    min-width: 690px;
-    width: 100%;
-    margin: 0 auto;
-  }
   .header {
-    margin: 1rem 1rem 1rem 1rem;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
   }
   .header__menu {
     max-width: 30rem;
@@ -190,6 +211,9 @@ li {
     margin-right: 0.4rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+  }
+  .header__menu li:last-child {
+    margin-right: 0;
   }
   .menu__link span {
     margin-left: 0.2rem;
@@ -209,13 +233,8 @@ li {
   }
 }
 @media (max-width: 320px) {
-  .container {
-    min-width: 290px;
-    width: 100%;
-    margin: 0 auto;
-  }
   .header {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem 0 1rem 0;
   }
   .menu__link span {
     margin-left: 0;
@@ -228,11 +247,11 @@ li {
     background: none !important;
   }
   #menuToggle {
-    position: relative;
-    top: 0;
-    left: 14rem;
+    left: 0rem;
     z-index: 1;
+    position: relative;
     display: block;
+    margin-top: -1rem;
     -webkit-user-select: none;
     -moz-user-select: none;
          user-select: none;
@@ -251,19 +270,17 @@ li {
     width: 2rem;
     height: 2rem;
     position: absolute;
-    top: 0;
-    left: 0;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
     -webkit-touch-callout: none;
   }
   #menuToggle span {
-    display: block;
+    position: relative;
     width: 2.063rem;
     height: 0.27rem;
+    display: block;
     margin-bottom: 0.313rem;
-    position: relative;
     background: #2C2C2C;
     border-radius: 3px;
     z-index: 1;
@@ -290,11 +307,16 @@ li {
   }
   #menu {
     position: absolute;
-    width: 12rem;
-    margin: -6rem -20.5rem -2rem;
-    padding: 2rem;
-    padding-top: 9rem;
-    background: #F2F2F2;
+    width: 21.2rem;
+    height: 16rem;
+    margin-left: -30rem;
+    margin-top: -4rem;
+    margin-bottom: -1rem;
+    padding-left: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 1.5rem;
+    padding-right: 10rem;
+    background: linear-gradient(to right, #F2F2F2 40%, transparent);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -408,8 +430,8 @@ footer {
 }
 @media (max-width: 320px) {
   .footer__row {
-    max-width: 30rem;
-    width: 25rem;
+    max-width: 20rem;
+    width: 18rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -419,7 +441,7 @@ footer {
     row-gap: 2rem;
   }
   .footer__row-col {
-    width: 25rem;
+    width: 18rem;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;

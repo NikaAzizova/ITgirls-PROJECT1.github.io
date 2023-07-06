@@ -22,6 +22,10 @@ $font2: 'Open Sans', sans-serif;
     text-transform: uppercase;
     background: $bg;
     color: $color;
+    @media screen and (max-width: 768px){
+        width: 8rem;
+        height: 3.3rem;
+    }
 }
 
 *{
@@ -35,13 +39,17 @@ html{
     @media (max-width:768px){
         font-size: 80%;
     }
+    @media (max-width:320px){
+        font-size: 60%;
+    }
 }
 
 .container{
 max-width: 1170px;
 width: 100%;
 margin: 0 auto;
-@media (max-width:768px) {
+
+@media (max-width: 768px) {
     max-width: 690px;
     width: 100%;
     margin: 0 auto;
@@ -90,6 +98,11 @@ line-height: normal;
         font-weight: 300;
         color: $color3;
     }
+    @media (max-width:768px){
+        font-size: 3rem;}
+    @media (max-width:320px){
+        font-size: 2rem;
+    }
     }
 
 .title-h2 {
@@ -97,4 +110,11 @@ line-height: normal;
     font-size: 4rem;
     font-weight: 300;
     color: $color3;
+    
+    @media (max-width:768px){
+        font-size: 3rem;
     }
+    @media (max-width:320px){
+        font-size: 2rem;
+    }
+}

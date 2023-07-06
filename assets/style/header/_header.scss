@@ -143,7 +143,7 @@ z-index: 2;
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 690px){
     .container {
         min-width: 290px;
         width: 100%;

@@ -4,22 +4,17 @@
 .project {
     max-width: 17.37rem;
     width: 100%;
+    &-main__span {
+        font-weight: 300;
+        color: $color3;
+    }
     &-main__title {
         font-family: $font;
         font-size: 4rem;
         position: relative;
     }
 }
-span {
-    font-weight: 300;
-    color: $color3;
-    @media screen and (max-width: 768px){
-        text-align: center;
-    }
-    @media screen and (max-width: 320px){
-        text-align: center;
-    }
-    }
+
 .line {
     margin-bottom: 2.44rem;
     &-up {
@@ -35,14 +30,8 @@ span {
     &-main__img {
         width: 73.125rem;
         height: 27.1875rem;
-        }
-    @media screen and (max-width: 768px){
-        text-align: center;
-        }
-    @media screen and (max-width: 320px){
-        text-align: center;
-        }
     }
+}
 .box {
     flex-basis: 20%;
     display: flex;
@@ -65,11 +54,5 @@ span {
         font-style: normal;
         font-weight: 300;
         line-height: 1.56rem;
-    }
-    @media screen and (max-width: 768px){
-        text-align: center;
-    }
-    @media screen and (max-width: 320px){
-        text-align: center;
     }
 }

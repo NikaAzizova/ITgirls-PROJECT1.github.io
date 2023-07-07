@@ -471,19 +471,18 @@ footer {
   max-width: 17.37rem;
   width: 100%;
 }
+.project-main__span {
+  font-weight: 300;
+  color: #BDBDBD;
+}
 .project-main__title {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
   position: relative;
 }
 
-span {
-  font-weight: 300;
-  color: #BDBDBD;
-}
-
 .line {
-  margin-bottom: 2.44rem;
+  margin-bottom: 1.9rem;
 }
 .line-up {
   width: 73.125rem;
@@ -505,7 +504,7 @@ span {
   flex-basis: 20%;
   display: flex;
   -moz-column-gap: 1.25rem;
-  column-gap: 1.25rem;
+       column-gap: 1.25rem;
   margin-bottom: 1.875rem;
 }
 .box-item {

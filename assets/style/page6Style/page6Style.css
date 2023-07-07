@@ -495,22 +495,6 @@ footer {
   }
 }
 
-.contact__title-color {
-  color: #BDBDBD;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
-  line-height: 4rem;
-}
-
-.contact__title {
-  color: #333333;
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 4rem;
-}
-
 .contact__text1 {
   color: #333333;
   font-size: 1.125rem;

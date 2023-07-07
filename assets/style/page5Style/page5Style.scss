@@ -13,7 +13,18 @@
         span{
             text-transform: uppercase;
     }   
+    @media screen (max-width: 768px){
+        max-width: 90%;
+        width: 100%;
+        margin: 0;
     }
+
+    @media screen (max-width: 320px){
+        max-width: 90%;
+        width: 100%;
+        margin: 0;
+    }
+}
 
 .certification_items{
     display: flex;
@@ -24,8 +35,15 @@
     .item_2{
         margin: 3rem;
     }
-    @media screen and (max-width: 1197px){
+    @media screen and (max-width: 768px){
         flex-direction: column;
+        max-width: 90%;
+        width: 100%;
     }
-}
+    @media screen and (max-width: 320px){
+            flex-direction: column;
+            max-width: 90%;
+            width: 100%;
+        }
+    }
 

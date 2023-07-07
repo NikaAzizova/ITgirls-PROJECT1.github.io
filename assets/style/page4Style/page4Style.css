@@ -37,11 +37,6 @@ html {
     margin: 0 auto;
   }
 }
-  @media screen and (max-width: 1197px) {
-    .line .content .content-dw .box {
-      flex-direction: column;
-    }
-}
 
 a,
 a:visited {
@@ -505,7 +500,7 @@ span {
   flex-basis: 20%;
   display: flex;
   -moz-column-gap: 1.25rem;
-  column-gap: 1.25rem;
+       column-gap: 1.25rem;
   margin-bottom: 1.875rem;
 }
 .box-item {

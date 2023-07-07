@@ -37,11 +37,6 @@ html {
     margin: 0 auto;
   }
 }
-  @media screen and (max-width: 1197px) {
-    .line .content .content-dw .box {
-      flex-direction: column;
-    }
-}
 
 a,
 a:visited {
@@ -482,7 +477,7 @@ footer {
 }
 
 .line {
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.44rem;
 }
 .line-up {
   width: 73.125rem;

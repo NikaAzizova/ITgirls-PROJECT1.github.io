@@ -4,6 +4,12 @@
 .project {
     max-width: 17.37rem;
     width: 100%;
+    @media (min-width: 320px) and (max-width: 768px) {
+        max-width: 17.37rem;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
     &-main__span {
         font-weight: 300;
         color: $color3;
@@ -12,29 +18,28 @@
         font-family: $font;
         font-size: 4rem;
         position: relative;
+    @media (min-width: 320px) and (max-width: 768px){
+        font-family: "Roboto", sans-serif;
+        font-size: 4rem;
+        position: relative;
+    }
     }
 }
 
-.line {
-    margin-bottom: 2.44rem;
-    &-up {
-        width: 73.125rem;
-        height: 0.0625rem;
-    }
-}
 .content {
     margin-bottom: 1.875rem;
     &-dw {
         margin-bottom: 7.5rem;
         }
     &-main__img {
-        width: 73.125rem;
-        height: 27.1875rem;
+        width: 100%;
+        height: auto;
     }
 }
 .box {
     flex-basis: 20%;
     display: flex;
+    justify-content: center;
     column-gap: 1.25rem;
     margin-bottom: 1.875rem;
     &-item {
@@ -46,13 +51,31 @@
     &-item__img {
         width: 26.1875rem;
         height: 26.75rem;
+        float: left;
+        padding: 0 20px 20px 0;
+    @media screen and (max-width: 320px) {
+        width: 100%;
+        height: auto;
+        float: center;
+        padding: 0 20px 20px 0;
     }
-    &-item1__text {
+    @media screen and (max-width: 768px) {
+        width: 26.1875rem;
+        height: 26.75rem;
+        float: left;
+        padding: 0 10px 10px 0;
+    }
+    }
+    &-item__text {
         color: $color2;
         font-size: 1rem;
         font-family: $font;
         font-style: normal;
         font-weight: 300;
         line-height: 1.56rem;
+    @media (min-width: 320px) and (max-width: 768px) {
+        text-align: justify;
+        content: none;
+        }
     }
 }

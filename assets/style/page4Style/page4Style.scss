@@ -42,6 +42,9 @@
     justify-content: center;
     column-gap: 1.25rem;
     margin-bottom: 1.875rem;
+    @media (min-width: 320px) and (max-width: 768px) {
+        flex-wrap:wrap;
+        }
     &-item {
         flex-basis: content;
         display: flex;

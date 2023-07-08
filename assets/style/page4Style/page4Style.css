@@ -510,6 +510,11 @@ footer {
        column-gap: 1.25rem;
   margin-bottom: 1.875rem;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .box {
+    flex-wrap: wrap;
+  }
+}
 .box-item {
   flex-basis: content;
   display: flex;
@@ -551,4 +556,4 @@ footer {
     text-align: justify;
     content: none;
   }
-}
+}/*# sourceMappingURL=page4Style.css.map */

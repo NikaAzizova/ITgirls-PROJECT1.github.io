@@ -485,8 +485,8 @@ footer {
   width: 100%;
 }
 .content-main__img {
-  width: 100%;
-  height: auto;
+  width: 73.125rem;
+  height: 27.1875rem;
 }
 .box {
   flex-basis: 20%;

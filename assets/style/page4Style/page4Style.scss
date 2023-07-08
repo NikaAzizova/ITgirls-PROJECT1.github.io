@@ -4,16 +4,17 @@
 .project {
     max-width: 17.37rem;
     width: 100%;
+    &-main__span {
+        font-weight: 300;
+        color: $color3;
+    }
     &-main__title {
         font-family: $font;
         font-size: 4rem;
         position: relative;
     }
 }
-span {
-    font-weight: 300;
-    color: $color3;
-    }
+
 .line {
     margin-bottom: 2.44rem;
     &-up {
@@ -29,8 +30,8 @@ span {
     &-main__img {
         width: 73.125rem;
         height: 27.1875rem;
-        }
     }
+}
 .box {
     flex-basis: 20%;
     display: flex;

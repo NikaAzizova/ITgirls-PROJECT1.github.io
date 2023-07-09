@@ -490,6 +490,12 @@ footer {
     order: 1;
   }
 }
+@media screen and (max-width: 320px) {
+  .contact__titles {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact__title {
@@ -560,6 +566,11 @@ footer {
   .contact__button {
     padding-bottom: 4rem;
     order: 3;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact__button {
+    padding-bottom: 2rem;
   }
 }
 

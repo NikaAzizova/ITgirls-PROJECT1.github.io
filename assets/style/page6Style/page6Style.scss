@@ -16,7 +16,7 @@
   padding-bottom: 7rem;
 
   @media screen and (max-width: 1170px) {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
   @media screen and (max-width: 767px) {
     display: flex;
@@ -26,13 +26,17 @@
 }
 
 .contact__titles {
-  padding-top: 3.27rem;
-  padding-bottom: 1.2rem;
+  // padding-top: 3.27rem;
+  // padding-bottom: 1.2rem;
   grid-area: h;
 
+  @media screen and (max-width: 1170px) {
+    // padding-top: 2rem;
+    // padding-bottom: 1rem;
+  }
   @media screen and (max-width: 767px) {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    // padding-top: 2rem;
+    // padding-bottom: 1rem;
     order: 1;
   }
 }
@@ -54,6 +58,7 @@
   grid-area: t1;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding: 1rem 0 1rem;
     order: 1;
   }
@@ -70,6 +75,7 @@
   grid-area: t2;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding-top: 1rem;
     order: 3;
   }
@@ -89,6 +95,7 @@
   grid-area: t3;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding: 1rem 0 3rem;
     order: 3;
   }

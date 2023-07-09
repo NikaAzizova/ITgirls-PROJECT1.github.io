@@ -559,8 +559,26 @@ footer {
 }
 
 .contact__button {
+  width: 13.875rem;
+  height: 4.4375rem;
+  border: none;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 0.75rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  background: #333333;
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: but;
+}
+@media screen and (max-width: 768px) {
+  .contact__button {
+    width: 8rem;
+    height: 3.3rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .contact__button {
@@ -572,25 +590,6 @@ footer {
   .contact__button {
     padding-bottom: 2rem;
   }
-}
-
-.contact__a {
-  color: #FFFFFF;
-  font-size: 0.75rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 0.75rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  background-color: #333333;
-  padding: 1.87rem 3.62rem 1.81rem 4.44rem;
-}
-
-.contact__a:hover {
-  color: #000000;
-  background-color: rgba(200, 200, 200, 0.5);
-  border-top: 2px solid #333333;
-  border-bottom: 2px solid #333333;
 }
 
 .contact__map {

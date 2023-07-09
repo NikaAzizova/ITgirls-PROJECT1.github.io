@@ -98,7 +98,10 @@
 }
 
 .contact__button {
-  color: $color5;
+  @include btn($color1, $color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: but;
 
   @media screen and (max-width: 767px) {
@@ -108,27 +111,6 @@
   @media screen and (max-width: 320px) {
     padding-bottom: 2rem;
   }
-}
-
-.contact__a {
-  color: $color5;
-  font-size: 0.75rem;
-  font-family: $font;
-  font-weight: 400;
-  line-height: 0.75rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-
-  background-color: $color1;
-
-  padding: 1.87rem 3.62rem 1.81rem 4.44rem;
-}
-
-.contact__a:hover {
-  color: $color2;
-  background-color: $color9;
-  border-top: 2px solid $color1;
-  border-bottom: 2px solid $color1;
 }
 
 .contact__map {

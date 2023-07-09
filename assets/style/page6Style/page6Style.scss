@@ -39,6 +39,10 @@
     // padding-bottom: 1rem;
     order: 1;
   }
+  @media screen and (max-width: 320px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .contact__title {
@@ -108,6 +112,9 @@
   @media screen and (max-width: 767px) {
     padding-bottom: 4rem;
     order: 3;
+  }
+  @media screen and (max-width: 320px) {
+    padding-bottom: 2rem;
   }
 }
 

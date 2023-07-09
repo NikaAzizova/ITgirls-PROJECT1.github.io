@@ -470,6 +470,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 1170px) {
+  .gallery__title {
+    text-align: center;
+  }
+}
+
 .gallery__items {
   display: grid;
   grid-template-columns: repeat(5, 13.125rem);

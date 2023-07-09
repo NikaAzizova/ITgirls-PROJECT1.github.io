@@ -464,9 +464,9 @@ footer {
 }
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: "h map" "t1 map" "t2 map" "t3 map" "but map";
+  grid-template-areas: "h 1fr" "h map" "t1 map" "t2 map" "t3 map" "but map";
   padding-bottom: 7rem;
 }
 @media screen and (max-width: 1170px) {
@@ -483,8 +483,8 @@ footer {
 }
 
 .contact__titles {
-  padding-top: 3.94rem;
-  padding-bottom: 1.87rem;
+  padding-top: 3.27rem;
+  padding-bottom: 1.2rem;
   grid-area: h;
 }
 @media screen and (max-width: 767px) {

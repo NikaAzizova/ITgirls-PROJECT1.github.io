@@ -471,7 +471,7 @@ footer {
 }
 @media screen and (max-width: 1170px) {
   .contact {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -483,14 +483,10 @@ footer {
 }
 
 .contact__titles {
-  padding-top: 3.27rem;
-  padding-bottom: 1.2rem;
   grid-area: h;
 }
 @media screen and (max-width: 767px) {
   .contact__titles {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
     order: 1;
   }
 }
@@ -512,6 +508,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .contact__text1 {
+    text-align: center;
     padding: 1rem 0 1rem;
     order: 1;
   }
@@ -529,6 +526,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .contact__text2 {
+    text-align: center;
     padding-top: 1rem;
     order: 3;
   }
@@ -548,6 +546,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .contact__text3 {
+    text-align: center;
     padding: 1rem 0 3rem;
     order: 3;
   }

@@ -590,7 +590,8 @@ footer {
 }
 @media screen and (max-width: 320px) {
   .contact__button {
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 

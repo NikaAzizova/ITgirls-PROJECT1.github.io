@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -464,7 +465,7 @@ footer {
 }
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "h map" "t1 map" "t2 map" "t3 map" "but map";
   padding-bottom: 7rem;
@@ -578,10 +579,13 @@ footer {
 }
 
 .contact__map {
-  max-width: 41.75rem;
-  max-height: 29.125rem;
-  border: 1px solid #333333;
+  height: 100%; /*высота, для того, чтобы грид занял всю колонку для позиционирования карты*/
+  width: 100%;
   grid-area: map;
+  display: grid;
+  align-items: center;
+  /*значения убрала в новый див map, сделала его гридом и центрировала дочерний объект*/
+  /*добавила еще один див, название можно его поменять, откорректировала ширину и высоту, чтобы карта встала по гриду и была приближена к макету*/
 }
 @media screen and (max-width: 767px) {
   .contact__map {
@@ -589,4 +593,11 @@ footer {
     max-height: 35rem;
     order: 2;
   }
+}
+.contact__map .map {
+  margin-top: 3.94rem;
+  max-height: 28rem;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #333333;
 }/*# sourceMappingURL=page6Style.css.map */

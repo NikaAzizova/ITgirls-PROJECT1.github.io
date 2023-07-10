@@ -470,7 +470,7 @@ footer {
   .gallery__titles {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 3rem;
   }
 }
 

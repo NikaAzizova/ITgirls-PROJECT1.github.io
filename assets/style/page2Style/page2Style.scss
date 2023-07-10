@@ -3,6 +3,9 @@
 @import "../footer/footer";
 
 .gallery__titles {
+  max-width: 100px;
+  width: 100%;
+
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;

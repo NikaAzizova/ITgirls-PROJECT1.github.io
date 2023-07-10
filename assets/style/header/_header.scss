@@ -150,11 +150,14 @@
     .menu__link span {
         margin-left: 0;
         margin-right: 0;
+        padding-bottom: 1rem;
+
+        line-height: 1.2rem;
 
         background: none!important;
     }
     
-    .menu__link span:hover {
+    .menu__link span:active {
         margin-left: 0;
         margin-right: 0;
 
@@ -169,16 +172,14 @@
     display: block;
     margin-top: -1rem;
     
-
     -webkit-user-select: none;
     user-select: none;
 }
 
 #menuToggle a {
+
     text-decoration: none;
     color: $color8;
-    
-    transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
@@ -246,16 +247,10 @@
 #menu {
     position: absolute;
     width: 21.2rem;
-    height: 16rem;
+    height: 20rem;
 
-    margin-left: -30rem;
-    margin-top: -4rem;
-    margin-bottom: -1rem;
-
-    padding-left: 2rem;
-    padding-top: 7rem;
-    padding-bottom: 1.5rem;
-    padding-right: 10rem;
+    margin: -4rem 0 -1rem -30rem;
+    padding: 8rem 10rem 1.5rem 2rem;
 
     background: linear-gradient(to right, $color6 40%, transparent);
     list-style-type: none;
@@ -269,7 +264,6 @@
 
 #menu li {
     padding: 0.3rem 0;
-    line-height: 1rem;
 }
 
 #menuToggle input:checked ~ ul {

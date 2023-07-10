@@ -4,10 +4,10 @@
 
 .contact {
   display: grid;
-  // grid-template-columns: 1fr 1fr; /*сделала вторую колонку чуть больше (2fr)*/
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: repeat(5, auto);
   grid-template-areas:
+    "h 1fr"
     "h map"
     "t1 map"
     "t2 map"
@@ -16,7 +16,7 @@
   padding-bottom: 7rem;
 
   @media screen and (max-width: 1170px) {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
   @media screen and (max-width: 767px) {
     display: flex;
@@ -26,14 +26,22 @@
 }
 
 .contact__titles {
-  padding-top: 3.94rem;
-  padding-bottom: 1.87rem;
+  max-width: 17.36019rem;
+  width: 100%;
   grid-area: h;
 
   @media screen and (max-width: 767px) {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
     order: 1;
+  }
+  @media screen and (max-width: 320px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.contact__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 
@@ -48,6 +56,7 @@
   grid-area: t1;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding: 1rem 0 1rem;
     order: 1;
   }
@@ -64,6 +73,7 @@
   grid-area: t2;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding-top: 1rem;
     order: 3;
   }
@@ -83,40 +93,27 @@
   grid-area: t3;
 
   @media screen and (max-width: 767px) {
+    text-align: center;
     padding: 1rem 0 3rem;
     order: 3;
   }
 }
 
 .contact__button {
-  color: $color5;
+  @include btn($color1, $color5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: but;
 
   @media screen and (max-width: 767px) {
     padding-bottom: 4rem;
     order: 3;
   }
-}
-
-.contact__a {
-  color: $color5;
-  font-size: 0.75rem;
-  font-family: $font;
-  font-weight: 400;
-  line-height: 0.75rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-
-  background-color: $color1;
-
-  padding: 1.87rem 3.62rem 1.81rem 4.44rem;
-}
-
-.contact__a:hover {
-  color: $color2;
-  background-color: $color9;
-  border-top: 2px solid $color1;
-  border-bottom: 2px solid $color1;
+  @media screen and (max-width: 320px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .contact__map {

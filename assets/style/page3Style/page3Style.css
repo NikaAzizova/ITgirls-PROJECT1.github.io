@@ -538,7 +538,7 @@ footer {
   width: 100%;
 }
 .cards .cards__wrapper .card__info {
-  margin: 3% 3% 3% 3%;
+  padding: 3% 3% 3% 3%;
 }
 @media screen and (max-width: 768px) {
   .cards .cards__wrapper .card__info {

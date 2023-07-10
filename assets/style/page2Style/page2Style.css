@@ -462,6 +462,10 @@ footer {
     margin-right: auto;
   }
 }
+.gallery__titles {
+  max-width: 100px;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .gallery__titles {
     display: flex;

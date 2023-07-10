@@ -26,6 +26,8 @@
 }
 
 .contact__titles {
+  max-width: 100px;
+  width: 100%;
   grid-area: h;
 
   @media screen and (max-width: 767px) {

@@ -508,6 +508,11 @@ footer {
     background: linear-gradient(rgba(250, 250, 253, 0.808), 90%, rgba(253, 251, 252, 0));
   }
 }
+@media (max-width: 320px) {
+  .box-main .box-main__wrapper {
+    max-width: 10rem;
+  }
+}
 .box-main .box-main__img {
   display: flex;
   flex-basis: 65.8%;
@@ -770,7 +775,7 @@ footer {
     height: 14rem;
   }
 }
-.projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-title {
+.projects .projects__content .projects__first-line .projects__wrapper .projects__link .projects__link-title {
   width: 14.56rem;
   color: #ffffff;
   font-size: 4rem;
@@ -780,7 +785,7 @@ footer {
   line-height: 4rem;
   margin-left: 4.94rem;
 }
-.projects .projects__content .projects__first-line .projects__wrapper .projects__link .link-button {
+.projects .projects__content .projects__first-line .projects__wrapper .projects__link .projects__link-button {
   font-size: 0.75rem;
   font-family: "Gothic A1", sans-serif;
   font-style: normal;
@@ -865,6 +870,7 @@ footer {
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+  border: none;
 }
 .contacts .contacts__content .contact__form .contact__input,
 .contacts .contacts__content .contact__form .contact__textarea {
@@ -879,6 +885,10 @@ footer {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.035rem;
+  padding-left: 3rem;
+}
+.contacts .contacts__content .contact__form input, .contacts .contacts__content .contact__form textarea {
+  outline: none;
 }
 .contacts .contacts__content .contact__form .contact__textarea {
   height: 9.1875rem;

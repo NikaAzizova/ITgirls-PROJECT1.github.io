@@ -3,21 +3,44 @@
 @import "../footer/footer";
 
 .gallery__titles {
-  max-width: 17.36019rem;
-  width: 100%;
+  // max-width: 17.36019rem;
+  // width: 100%;
+  padding: 3.94rem 0 1.87rem 0;
 
   @media screen and (max-width: 768px) {
+    padding: 1.5rem 0 1rem 0;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
     // align-items: center;
-    max-width: 3rem;
+    // max-width: 3rem;
+    // text-align: center;
   }
 }
 
 .gallery__title {
+  font-family: $font;
+  font-size: 4rem;
+  font-weight: 700;
+
   @media screen and (max-width: 1170px) {
     text-align: center;
   }
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 320px) {
+    font-size: 2rem;
+  }
+}
+
+.gallery__title-color {
+  font-weight: 300;
+  color: $color3;
+}
+
+.gallery__title-main {
+  margin: 0;
 }
 
 .gallery__items {

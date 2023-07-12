@@ -458,21 +458,44 @@ footer {
   }
 }
 .gallery__titles {
-  max-width: 17.36019rem;
-  width: 100%;
+  padding: 3.94rem 0 1.87rem 0;
 }
 @media screen and (max-width: 768px) {
   .gallery__titles {
+    padding: 1.5rem 0 1rem 0;
     display: flex;
     flex-direction: column;
-    max-width: 3rem;
   }
 }
 
+.gallery__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
 @media screen and (max-width: 1170px) {
   .gallery__title {
     text-align: center;
   }
+}
+@media (max-width: 768px) {
+  .gallery__title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .gallery__title {
+    font-size: 2rem;
+  }
+}
+
+.gallery__title-color {
+  font-weight: 300;
+  color: #bdbdbd;
+}
+
+.gallery__title-main {
+  margin: 0;
 }
 
 .gallery__items {

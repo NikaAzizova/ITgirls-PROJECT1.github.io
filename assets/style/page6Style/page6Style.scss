@@ -117,16 +117,11 @@
 }
 
 .contact__map {
-  // max-width: 41.75rem;
-  // max-height: 29.125rem;
-  height: 100%; /*высота, для того, чтобы грид занял всю колонку для позиционирования карты*/ 
+  height: 100%; 
   width: 100%;
-  // border: 1px solid $color1;
   grid-area: map;
   display: grid;
   align-items: center;
-  /*значения убрала в новый див map, сделала его гридом и центрировала дочерний объект*/
-
 
   @media screen and (max-width: 767px) {
     max-width: 25rem;
@@ -134,12 +129,10 @@
     order: 2;
   }
   .map{
-    // max-width: 41.75rem;
-    // max-height: 29.125rem;
     margin-top: 3.94rem;
     max-height: 28rem;
     height: 100%;
     width: 100%;
     border: 1px solid $color1;
-  } /*добавила еще один див, название можно его поменять, откорректировала ширину и высоту, чтобы карта встала по гриду и была приближена к макету*/
+  } 
 }

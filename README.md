@@ -9,6 +9,7 @@
 <p>https://nikaazizova.github.io/ITgirls-PROJECT1.github.io/</p>
 </div>
 <br>
+<br>
 <div>
 <p align="center">
  <img width="700px" src="./assets/image/ScreenShots/websiteImgOne.png" alt="qr"/>

@@ -9,3 +9,55 @@
 <p>https://nikaazizova.github.io/ITgirls-PROJECT1.github.io/</p>
 </div>
 <br>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgOne.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgTwo.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgThree.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgFour.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgFive.png" alt="qr"/>
+</p>
+</div>
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgSix.png" alt="qr"/>
+</p>
+</div>
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgSeven.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgEight.png" alt="qr"/>
+</p>
+</div>
+
+<div>
+<p align="center">
+ <img width="700px" src="./assets/image/ScreenShots/websiteImgNine.png" alt="qr"/>
+</p>
+</div>
